@@ -1,0 +1,6 @@
+<span [mdMenuTriggerFor]="menu" aria-label="Open anchor menu">
+    <md-menu #menu="mdMenu">    
+            <a md-menu-item *ngFor="let item of stdConfigList"  [href]="item.link">
+              {{item.name}}
+            </a>
+    </md-menu>

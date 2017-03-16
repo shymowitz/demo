@@ -1,0 +1,64 @@
+
+<div>
+    <div class="breadcrum col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <a [routerLink]="['']" class="gobackarrow"><i class="material-icons">arrow_back</i></a>
+        <span class="product-title">{{offeringProduct.attributes?.nameCode}} Offerings</span>
+        <compare-product (disableRemaining)="disableRemaining($event)" (enableAll)="enableAll($event)"></compare-product>
+    </div>
+
+    <div class="container-fluid">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 card-adjust">
+            <md-card *ngFor="let contractor of offeringProduct.relationships?.contractors;let index=index" class="offering-product">
+                <div class="product-categories">
+                    <span class="category-name">{{filterCodes[offeringProduct.attributes.configurationTypeCode]}}</span>
+                </div>
+                <div class="product-img col-xs-12 col-sm-3 col-md-4 col-lg-4 col-xl-4">
+                    <!--<img [src]="offeringProduct.attributes?.imageUrl || config?.defaultImage">-->
+                    <!--changes needed once images are ready-->
+                    <!--<img [src]="config?.defaultImage">-->
+                    <img md-card-image alt="Product image" class="product-image grow" src='{{gssFileSystemUrl}}/{{contractor.contractorClinId}}/{{contractor.contractorClinId}}-1.png'
+                    />
+                </div>
+                <div class="product-content padding-left-none padding-right-none col-xs-12 col-sm-9 col-md-8 col-lg-8 col-xl-8">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="product-name col-xs-8 col-sm-8 col-md-6 col-lg-6 col-xl-6">{{offeringProduct.attributes?.nameCode}}</div>
+                        <div class="price col-xs-4 col-sm-4 col-md-6 col-lg-6 col-xl-6">
+                            <!--<span *ngIf="checkOmb(offeringProduct.attributes.configurationTypeCode)" class="tag">OMB</span>-->
+                            <span class="pull-right">{{contractor.baseProductPrice | currency:'USD':true}}</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ch-details">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ch-name"><span>Contract Holder</span><br/> {{contractor.contractorName}}
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 os-spec">{{contractor.osSpecs | slice:0:displayCharCount}}
+                            <!--<span *ngIf="contractor.osSpecs.length>displayCharCount" class="spec" id="spec{{index}}" [tooltip]="contractor.osSpecs" parentSelector="#spec{{index}}"
+                                tooltipClass="custom-tooltip">...See More</span>-->
+                                <span *ngIf="contractor.osSpecs.length>displayCharCount" class="spec" id="spec{{index}}" [popover]="contractor.osSpecs" [popoverCloseOnClickOutside]="true"
+                                popoverPlacement="left">...See More</span>
+                        </div>
+                    </div>
+                    <div class="part-num col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <span>Manufacturer Part Number</span><br/>{{offeringProduct.attributes?.oemMfrCode}}
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 comp-view">
+                        <div class="compare prod-offr col-xs-8 col-sm-8 col-md-6 col-lg-6 col-xl-6">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" #chk value="compare" [checked]="comparedIds.indexOf(contractor.clinIdf)!==-1"
+                                (click)="addToCompare(contractor.clinIdf,chk)" [disabled]="isDisable(contractor)"> Compare
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 col-xl-6 text-right">
+                            <a class="view-product" [routerLink]="[contractor.clinIdf]">View Product</a>
+                        </div>
+                    </div>
+                </div>
+            </md-card>
+        </div>
+    </div>
+</div>

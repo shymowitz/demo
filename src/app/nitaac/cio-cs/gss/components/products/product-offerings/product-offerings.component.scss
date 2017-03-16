@@ -1,0 +1,177 @@
+.offering-product {
+        box-shadow: 0px 0px 5px #777;
+        box-shadow: 0 3px 1px 0 #777;
+        height: 300px;
+        margin-bottom: -20px;
+        //margin-top: 45px;
+        &:hover {
+            box-shadow: 0px 0px 8px #000;
+             //box-shadow: 0 0 8px #dec3c9;
+            }
+            .product-categories {
+                margin-left: -24px;
+                margin-right: -24px;
+                margin-top: -24px;
+                background-color: #1191C1;
+                box-shadow: 0 1px 2px 0 rgba(204,204,204,0.9);
+                height: 40px;
+                line-height: 40px;
+                .category-name {
+                    padding-left: 20px;
+                    font-family: Roboto;
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: #FFFFFF;
+                }
+            }
+            img {
+                width: 317.27px;
+                height: 259px;
+                margin-top: 0px;
+                margin-left: 41px;
+            }
+            .product-content { 
+                .product-name {
+                    font-size: 20px;
+                    color: #434750;
+                    font-family: Merriweather;
+                    padding-top: 29px;    
+                }
+                .price {
+                    font-size: 20px;
+                    color: #434750;
+                    font-family: Roboto;
+                    padding-top: 29px; 
+                }
+                .ch-details {
+                    font-size: 17px;
+                    font-family: Roboto;
+                    font-weight: 500;
+                    color: #434750;
+                    padding-top: 20px;
+                    span{
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+                .part-num {
+                    font-size: 17px;
+                    font-family: Roboto;
+                    font-weight: 500;
+                    color: #434750;
+                    padding-top: 10px;
+                    span{
+                        font-weight: bold;
+                    }
+                }
+                .os-spec {
+                    font-size: 17px;
+                }
+                .spec {
+                    color: #4399C4;
+                }
+                div {
+                    //margin-bottom: 20px;
+                    color: #434750;
+                    //margin-top: 29px;
+                .compare {
+                    font-size: 20px;
+                    color: #4EA639;
+            }
+        }
+    }
+}
+a.view-product{
+    box-shadow: none;
+    color: #0A5694;
+    font-family: Roboto;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 17px;
+    &:hover{
+        text-decoration: none;
+        outline: none;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.card-adjust{
+    padding-left: 20px;
+}
+
+@media (max-width:520px){
+    .offering-product{
+        overflow: hidden;
+        margin-bottom: 30px;
+        height: auto;
+    }
+    .product-content{
+        margin: 22px 0 0 -30px;
+    }
+    .product-details{
+        .padding-left-none{
+            padding-left: 15px!important;
+        }
+    }
+}
+.prod-offr{    
+    .checkbox label:after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .checkbox label{
+        padding-left: 0;
+        min-height: 0;
+        line-height: 18px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        color: #428533;
+    }
+
+    .checkbox .cr{
+        position: relative;
+        display: inline-block;
+        border: 2px solid #434750;
+        border-radius: .15em;
+        width: 1em;
+        height: 1em;
+        float: left;
+        margin-right: .5em;
+    }
+    .checkbox .cr .cr-icon{
+        position: absolute;
+        font-size: .8em;
+        top: 50%;
+        left: 20%;
+    }
+
+    .checkbox label input[type="checkbox"]{
+        display: none;
+    }
+
+    .checkbox label input[type="checkbox"] + .cr > .cr-icon {
+        transform: scale(3) rotateZ(-20deg);
+        opacity: 0;
+        transition: all .3s ease-in;
+    }
+
+    .checkbox label input[type="checkbox"]:checked + .cr > .cr-icon{
+        transform: scale(1) rotateZ(0deg);
+        opacity: 1;
+        position: relative;
+        top: -5px;
+        left: -1px;
+        background: #2e5d24;
+        color: #fff;
+        border: 2px solid #2e5d24;
+        font-size: 10px;
+    }
+    .checkbox label input[type="checkbox"]:disabled + .cr{
+        opacity: .5;
+    }
+}
+
+

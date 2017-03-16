@@ -1,0 +1,311 @@
+<div class="breadcrum col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <!--<a [routerLink]="['/ordersummary']" class="gobackarrow"><i class="fa fa-angle-left" aria-hidden="true"></i></a>-->
+    <span class="product-title">Checkout</span>
+</div>
+<div *ngIf="finalOrders && finalOrders.length!=0" class="container">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 finalize-msg">
+        Below are the individual orders from each contract holder added to your order summary. You can place individual orders through
+        each of these contract holders.
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"></div>
+    <div class="final-order col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div *ngFor="let order of this.finalOrders; let index=index">
+            <md-card class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 checkout">
+                <md-card-title class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 checkout-details">
+                    <div *ngIf="!order.placed  && !order.rfqRequested">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 order-num">{{order.contractorDetails?.attributes?.nameCode}} Products</div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 view-products">
+                            <a (click)="viewDetails(order)" data-toggle="modal" data-target="#detailsModal"></a>
+                            <!--<span class="price">{{order.totalAmount | currency:'USD':true}}</span>-->
+                            <div class="trash"><i class="material-icons" (click)="removeOrder(Index)">delete_forever</i></div>
+                        </div>
+                        <div class="ch-name">{{order.contractorDetails?.attributes?.nameCode}}</div>
+                    </div>
+                    <div *ngIf="order.placed">
+                        <div *ngIf="order.placed" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 order-num">Order ID: #{{order.orderId}}</div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 view-products">
+                            Thank you for your order!
+                            <!--<span class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">Order ID: #{{order.orderId}}</span>-->
+                        </div>
+                    </div>
+
+                </md-card-title>
+                <div *ngIf="!order.rfqRequested">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 information">Contract Holder Contact Information</div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <span class="price">{{order.totalAmount | currency:'USD':true}}</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 contractor-details">
+                        <!--<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">-->
+                        <div class="contractor-name">{{order.contractorDetails?.attributes?.nameCode}}</div>
+                        <div class="contractor-email">{{order.contractorDetails?.attributes?.emailAddress}}</div>
+                        <div class="contractor-phone">{{order.contractorDetails?.attributes?.phoneNumber}}</div>
+                        <!--</div>-->
+                    </div>
+
+                    <div *ngIf="!order.placed" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 order-info">
+                        <span class="view-prod" (click)="viewDetails(order)" data-toggle="modal" data-target="#detailsModal">VIEW PRODUCTS</span>
+                        <span class="download-info">DOWNLOAD SUMMARY</span>
+                        <span class="rfq" data-toggle="modal" data-target="#rfqModal" (click)="setPlaceOrder(order, index)" *ngIf="order.totalAmount<=config.rfqLimit">CREATE RFQ</span>
+
+                        <button type="button" *ngIf="order.totalAmount<=config.rfqLimit" class="btn btn-default" data-toggle="modal" data-target="#pocModal"
+                            (click)="setPlaceOrder(order, index)">PLACE ORDER</button>
+                            <!--<button mat-raised-button color="primary" *ngIf="order.totalAmount<=config.rfqLimit" (click)="setPlaceOrder(order, index)"
+                        data-toggle="modal" data-target="#pocModal">PLACE ORDER</button>-->
+                            <button type="button" class="btn btn-default" *ngIf="order.totalAmount>config.rfqLimit">Standard Configuration</button>
+                            <button type="button" class="btn btn-default" (click)="setPlaceOrder(order, index)" *ngIf="order.totalAmount>config.rfqLimit">CREATE RFQ</button>
+                            <!--<button mat-raised-button color="primary" *ngIf="order.totalAmount>config.rfqLimit">Standard Configuration</button>-->
+                    </div>
+                </div>
+                <div *ngIf="order.rfqRequested">
+                    <div class="rfq-request col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="col-cs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">You are almost done!</div>
+                        <div class="ord col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">Order ID: #{{order.orderId}}</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="msg col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">Your Order Summary has been downloaded to your computer. Continue to the RFQ page to upload your order summary and place your order. If you are on a mobile device, please use the order ID #{{order.orderId}} to create an RFQ.</div>
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8"></div>
+                    </div>
+
+                </div>  
+            </md-card>
+           
+        </div>
+        <!--Email Summary-->
+        <div class="mail-form">
+            <md-card class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 email">
+                <form name="mailForm">
+                    <div class="top-header"></div>
+                    <div class="email-title">Email Order Summary</div>
+                    <!--<div class="col-xm-12 col-md-6">
+                        <md-input class="col-xm-12 col-md-6" placeholder="Recipient's Name'" [(ngModel)]="mailDetails.name" name="fullname" #fullname="ngModel"></md-input>
+                    </div>
+                    <div class="col-xm-12 col-md-6">
+                        <md-input class="col-xm-12 col-md-6" placeholder="Recipient's Email" [(ngModel)]="mailDetails.email" name="email" #email="ngModel"></md-input>
+                    </div>-->
+                    <div class="col-xm-12 col-md-6">
+                        <md-input class="col-xm-12 col-md-6" placeholder="Recipient's Name" [(ngModel)]="mailDetails.rname" name="rfullname" #rfullname="ngModel"></md-input>
+                    </div>
+                    <div class="col-xm-12 col-md-6">
+                        <md-input class="col-xm-12 col-md-6" placeholder="Recipient's Email" [(ngModel)]="mailDetails.remail" name="remail" #remail="ngModel"></md-input>
+                    </div>
+                    <div class="col-xm-12 col-md-10">
+                        <md-input class="col-xm-12 col-md-10" placeholder="Message" [(ngModel)]="mailDetails.message" name="message" #message="ngModel"></md-input>
+                    </div>
+                    <div class="col-xm-12 col-md-2">
+                        <input type="submit" class="btn btn-primary" (click)="sendMail()" value="SUBMIT" name="SUBMIT">
+                    </div>
+                </form>
+            </md-card>
+        </div>
+    </div>
+</div>
+<!-- RFQ popup -->
+<div id="rfqModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- RFQ Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <div><button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+                <div class="confirm">Attention!</div>
+            </div>
+            <div class="modal-body">
+                <div class="msg">Your order is below $150,000. You do not have to create an RFQ. You can place an order directly by clicking
+                    "Place Order".</div>
+            </div>
+            <div class="modal-footer">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 rfq" (click)="createRFQ()" data-dismiss="modal">CREATE RFQ</div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">PLACE ORDER</button>-->
+                        <button md-raised-button color="primary" data-dismiss="modal" data-toggle="modal" data-target="#pocModal">PLACE ORDER</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- View Details popup-->
+<div class="modal fade" id="detailsModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- POP UP Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <div><button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+                <h3>Order Summary</h3>
+            </div>
+            <div class="modal-body col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="orders" *ngFor="let product of orderDetails.products;let index=index">
+                    <md-card class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="product-categories">
+                    <span class="category-name">{{filterCodes[product.attributes.configurationTypeCode]}}</span>
+                </div>
+                        <div class="product-img col-xs-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                            <!--<img [src]="order.attributes?.imageUrl || config.defaultImage">-->
+                            <!--<img [src]="product.attributes?.imageUrl || config?.defaultImage">-->
+                            <img md-card-image alt="Product image" class="product-image grow" src='{{gssFileSystemUrl}}/{{product.attributes?.contractorClinId}}/{{product.attributes?.contractorClinId}}-1.png'
+                            />
+                        </div>
+                        <div class="product-content col-xs-12 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-none pr-none">
+                                <div class="product-name col-xs-8 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    {{product.attributes?.itemName}}
+                                </div>
+
+                                <div class="quan-price col-xs-4 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="pull-right">
+                                        <div class="quantity">
+                                            <span>
+                                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                            </span><br/>
+                                            <span class="count">{{product.quantity}}</span><br/>
+                                            <span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                        </div>
+                                        <div class="price">{{product.attributes?.discountedUnitPrice | currency:'USD':true}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 product-desc">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"><b>Contract Holder</b><br/> {{product.attributes?.contractorName}}
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 os-spec">{{product.attributes?.itemSpecifications | slice:0:displayCharCount}}
+                                    <span *ngIf="product.attributes?.itemSpecifications.length>displayCharCount" class="spec" id="spec{{index}}" [popover]="product.attributes?.itemSpecifications" [popoverCloseOnClickOutside]="true"
+                                popoverPlacement="left">...See More</span>
+                                </div>
+                            </div>
+                            <div class="view-add col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" (click)="showAddons=!showAddons" *ngIf="product.addons?.length>0">
+                                <span class="addons">VIEW ADD ONS<a (click)="toggleAddons(index)"><i *ngIf="showAddons" class="fa fa-angle-up" aria-hidden="true"></i>
+                                <i *ngIf="!showAddons" class="fa fa-angle-down" aria-hidden="true"></i></a></span>
+                            </div>
+                        </div>
+                    </md-card>
+
+                    <div class="addons" *ngIf="viewAddons(index)">
+                        <div class="content">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 addonlist">
+                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3" *ngFor="let option of product.addons">
+                                    <md-card class="product">
+                                        <md-card-content>
+                                            <md-card-title class="addon-title">{{addonsType[option.configurationTypeCode]}}</md-card-title>
+                                            <div class="desc">{{option.itemName}}</div>
+                                            <div>
+                                                <span class="price">{{option.discountedUnitPrice | currency:'USD': true}}</span>
+                                                <span class="quantity">
+                                                    <span (click)="updateQuantity(option, true, order.orderAmount)"><i class="fa fa-angle-up" aria-hidden="true"></i></span><br/>
+                                                <span class="count">{{option.quantity}}</span><br/>
+                                                <span (click)="updateQuantity(option, false, order.orderAmount)"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                                </span>
+                                            </div>
+                                        </md-card-content>
+                                    </md-card>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button md-raised-button color="primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- place order popup -->
+<div class="modal fade" id="pocModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content modalContent">
+            <div class="modal-body">
+                <div class="container modal-container">
+                    <div><button type="button" (click)="closePOC()" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+                    <form name="pocForm">
+                        <h3>Order Type*</h3>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 order-type">
+                            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                                <md-radio-group [(ngModel)]="orderType" name="orderType">
+                                    <md-radio-button value="ccorder">Credit Card Order</md-radio-button>
+                                    <md-radio-button class="po-order" value="poorder">PO Order</md-radio-button>
+                                </md-radio-group>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">UPLOAD FILE</div>
+                        </div>
+                        <h3>Point Of Contact*</h3>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-checkbox [checked]="selfPOC" (change)="setSelfPOC()">Assign myself as POC</md-checkbox>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="Search Users" [disabled]="selfPOC" [(ngModel)]="searchText" (ngModelChange)="searchUser($event)" name="username"
+                                    #username="ngModel">
+                                    </md-input>
+                                    <div *ngIf="searchedUsers.length>0" id="searchedUsers">
+                                        <ul>
+                                            <li *ngFor="let suser of searchedUsers"><a (click)="selectUser(suser)">{{suser.firstName}} {{suser.lastName}} ({{suser.email}})</a></li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="Full Name" [ngModel]="pocDetails.firstName" name="fullname" readonly></md-input>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="Organization" [ngModel]="pocDetails.orgName" name="orgid" readonly></md-input>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="Email" [ngModel]="pocDetails.email" name="email" readonly></md-input>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="Phone Number" [ngModel]="pocDetails.phNo" name="phone" readonly></md-input>
+                            </div>
+                        </div>
+                        <h3>Shipping Information</h3>
+                        <div class="col-xs-12 col-sm-12 co-md-12 col-lg-12 col-xl-12">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="Street Name and Number" [ngModel]="pocDetails.address?.street1" name="street"></md-input>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="City" [ngModel]="pocDetails.address?.city" name="city"></md-input>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 co-md-12 col-lg-12 col-xl-12">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="State" [ngModel]="pocDetails.address?.state" name="state"></md-input>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="Zip Code" [ngModel]="pocDetails.address?.zip" name="zip"></md-input>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="Country" name="country" [ngModel]="country"></md-input>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 date">
+                            <label>Expected Delivery Date :</label>
+                            <input type="date" name="expdate" [ngModel]="expDate">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 submit-btn">
+                            <md-checkbox [checked]="acceptTerms" [disabled]="!pocDetails.userId" [(ngModel)]="acceptTerms" name="terms"></md-checkbox>
+                            <span>
+                                By clicking submit, you agree to our terms that you have reviewed all offerings provided by the contract holder for these products, before selecting this offer.
+                            </span>
+                        </div>
+                        <button md-raised-button color="primary" [disabled]="!acceptTerms" (click)="placeOrder()" data-dismiss="modal">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="orders.length==0">
+    <h4>You don't have finalized products!</h4>
+</div>

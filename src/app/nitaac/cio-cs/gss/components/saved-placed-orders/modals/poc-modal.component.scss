@@ -1,0 +1,19 @@
+.text-wrap {
+    display: inline-block;
+    width: 45%;
+    height: auto;
+    word-wrap: break-word;
+}
+.modal-dialog {
+   width: 72%;
+}
+
+.modal-scrollable {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow-y: auto;
+  overflow-x: hidden;
+}

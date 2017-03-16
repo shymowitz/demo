@@ -1,0 +1,55 @@
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 header">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 header-logo">
+        <img src="../assets/images/NITAAC-Logo-Reimagine-LightBG_white_bg.png">
+    </div>
+    <div class="support col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        NITAACsupport@nih.gov
+    </div>    
+</div>
+<div class="">
+    <h2>Login</h2>
+    <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+        <md-card>
+        <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !email.valid }">
+            <div for="email"><span class="xlabel">Email Address</span></div>
+            <md-input type="text" class="xform-control" name="email" [(ngModel)]="user.email" #email="ngModel" required >
+            </md-input>
+            <div *ngIf="f.submitted && !email.valid" class="help-block">Email is required</div>
+        </div>
+        <!--
+        <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+            <div for="password"><span class="xlabel">Password</span></div>
+            <md-input type="password" class="xform-control" name="password" [(ngModel)]="user.password" #password="ngModel" required>
+            </md-input>
+            <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+        </div>
+        -->
+        <div class="form-group">
+            <a role="button" [routerLink]="['/register']">
+               <span class="xlabel">Forgot Password?</span>
+            </a>
+        </div>
+        <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+            <md-checkbox class="" name="remember" [(ngModel)]="user.remember" #password="ngModel" required>
+            </md-checkbox>
+            <span class="xlabel" for="remember">Remember Me</span>
+        </div>
+        
+        <div class="form-group button-center">
+            <button [disabled]="loading" class="btn btn-primary">Login</button>
+            <div *ngIf="loading">
+               <i class="fa fa-spinner fa-spin" style="font-size:24px"></i>
+            </div>
+            <div>
+            <a [routerLink]="['/register']" class="btn btn-link">
+            Don't have an account? Register here</a>
+            </div>
+        </div>
+        </md-card>
+    </form>
+</div>
+<div class="footer">
+    <div class="addr1">6011 Executive Blvd</div>
+    <div class="addr2">Rockville, MD 20852</div>
+</div>
+

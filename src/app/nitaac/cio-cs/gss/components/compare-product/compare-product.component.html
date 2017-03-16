@@ -1,0 +1,71 @@
+<!--Comparison link-->
+<span class="compare-count">You have 3 items to compare.</span>
+<button class="btn view-compare" (click)="viewComparision()" data-toggle="modal" data-target="#compareModal">View Comparison</button>
+<!--Comparison pop up-->
+<div class="modal fade" id="compareModal" role="dialog">
+    <div class="modal-window">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="compare-header">Comparison</span>
+                <div><button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+            </div>
+            <div class="modal-body">
+                <div class="container" *ngIf="productDetails?.length>0">
+                    <div class="col-md-12">
+                        <!--<table class="prod-img">
+                            <tbody>
+                                
+                            </tbody>
+                        </table>-->
+                    </div>
+                    <div class="col-md-12">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="cell-border labels">
+                                        <span class="table-spec">Specs</span>
+                                    </td>
+                                    <td class="cell-border" *ngFor="let product of productDetails;let index=index">
+                                        <!--<div class="trash"><i class="material-icons" (click)="deleteCompare(product,index)">delete</i></div>-->
+                                        <md-card>
+                                            <div class="product-categories"><span class="category-name">{{filterCodes[product.attributes?.configurationTypeCode]}}</span>
+                                                <span class="delete-compare" (click)="deleteCompare(product,index)">x</span>
+                                            </div>
+                                            <!--<img md-card-image alt="Main image" [src]="config?.defaultImage" class="product-image grow">-->
+                                            <img md-card-image alt="Product image" class="product-image grow" src='{{gssFileSystemUrl}}/{{product.attributes?.contractorClinId}}/{{product.attributes?.contractorClinId}}-1.png'
+                                            />
+                                            <md-card-content>
+                                                <md-card-title title="">{{product.attributes?.itemName}}</md-card-title>
+                                                <div class="ch-name">{{product.attributes?.contractorName}}</div>
+                                                <div class="price">From {{product.attributes?.price | currency:'USD': true }}</div>
+                                            </md-card-content>
+                                            <span class="delete-compare" (click)="deleteCompare(product,index)">Remove from Comparison</span>
+                                        </md-card>
+                                    </td>
+                                </tr>
+                                <tr *ngFor="let property of productProperties">
+                                    <td class="cell-border labels">{{property.label}}</td>
+                                    <td [class.cell-border]="productDetails[0]">{{property.product1}}</td>
+                                    <td [class.cell-border]="productDetails[1]">{{property.product2}}</td>
+                                    <td [class.cell-border]="productDetails[2]">{{property.product3}}</td>
+                                </tr>
+                                <h3 class="addons col-md-12">Add Ons</h3>
+                                <tr *ngFor="let property of addonsProperties">
+                                    <td class="cell-border labels">{{property.label}}</td>
+                                    <td [class.cell-border]="property.product1">{{property.product1}}</td>
+                                    <td [class.cell-border]="property.product2">{{property.product2}}</td>
+                                    <td [class.cell-border]="property.product3">{{property.product3}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="col-md-12">
+
+                    </div>
+                </div>
+                <div *ngIf="productDetails?.length==0">You don't have products to compare!</div>
+            </div>
+        </div>
+    </div>

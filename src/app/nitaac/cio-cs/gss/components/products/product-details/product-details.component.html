@@ -1,0 +1,234 @@
+  <div class="breadcrum col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <a (click)="goBack()" class="gobackarrow"><i class="material-icons">arrow_back</i></a>
+    <span class="product-title">{{productDetails.attributes?.itemName}} </span>
+    <compare-product (disableRemaining)="disableRemaining($event)" (enableAll)="enableAll($event)"></compare-product>
+  </div>
+<div class="product-details no-padding col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+  <div class="container-fluid card-adt padding-left-none padding-right-none">
+  <md-card class="detail-page">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 padding-right-none padding-left-none">
+      <div class="product-categories">
+        <span class="category-name">{{filterCodes[productDetails.attributes?.configurationTypeCode]}}</span>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <div class="carousel detail-img col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+      <ul class="slides">
+        <li *ngFor="let image of images">
+          <img src="{{image}}" alt=""/>
+        </li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 pull-right padding-right-none product-details">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 padding-right-none detail-content">
+        <div class="detail-name col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 padding-left-none">{{productDetails.attributes?.itemName}}
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pull-right padding-right-none">
+          <div class="quantity">
+            <span (click)="updateQuantity(true)"><i class="fa fa-angle-up" aria-hidden="true"></i>
+            </span>
+            <span class="count">
+              <md-input [restrictKey]="'^[0-9]*$'" [ngModel]="productDetails.quantity" name="prodquantity" (ngModelChange)="updateMultiQuantity($event)">
+              </md-input>
+            </span>
+            <span (click)="updateQuantity(false)"><i class="fa fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="price">{{productDetails.attributes?.discountedUnitPrice | currency:'USD':true}}</div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 padding-right-none detail-content">
+        <div class="col-xs-12 p-left col-sm-12 col-md-6 col-lg-6 col-xl-6 padding-left-none"><b>Contract Holder</b><br/> {{productDetails.attributes?.contractorName}}<br/>
+        <span><b>Manufacturer Part Number</b></span><br/>{{productDetails.attributes?.oemPartNum}}
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 os-spec">{{productDetails.attributes?.itemSpecifications | slice:0:displayCharCount}}
+            <span *ngIf="productDetails.attributes?.itemSpecifications.length>displayCharCount" class="spec" id="spec{{index}}" [popover]="productDetails.attributes?.itemSpecifications" [popoverCloseOnClickOutside]="true"
+            popoverPlacement="left">...See More</span>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 padding-right-none detail-content">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 padding-left-none prod-offr">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" #chk value="compare" [checked]="comparedIds.indexOf(productDetails.attributes?.nitaacClin)!==-1"
+          (click)="addToCompare(productDetails.attributes?.nitaacClin,chkbx)
+           " [disabled]="isDisable(productDetails.attributes?.nitaacClin)"/> Compare
+        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+            </label>
+          </div>
+          <!--<b>Manufacturer Part Number</b><br/>{{productDetails.attributes?.oemPartNum}}-->
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"></div>
+      </div>
+      <div class="compare col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 txt-left">
+      </div>
+    </div>
+    </div>
+  </md-card>
+
+  <div class="tabs  col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <md-tab-group>
+      <md-tab>
+        <template md-tab-label>
+          <span class="options">ADD ONS</span>
+        </template>
+        <div class="content">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 addonlist">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 addons" *ngFor="let option of productDetails.relationships?.contractor?.options; let addonIndex=index">
+              <md-card class="product">
+                <md-card-content>
+                  <md-card-title class="addon-title">{{addonsType[option.configurationTypeCode]}}</md-card-title>
+                  <div class="desc">{{option.itemName}}</div>
+                  <div>
+
+                    <span class="price">{{option.price | currency:'USD': true}}</span>
+                    <span class="quantity">
+                       <span (click)="updateAddonQuantity(addonIndex, true)"><i class="fa fa-angle-up" aria-hidden="true"></i></span><br/>
+                    <span class="count"><md-input [ngModel]="option.quantity" name="quantity" [restrictKey]="'^[0-9]*$'" (ngModelChange)="updateAddonMultiQuantity($event,addonIndex)"></md-input></span><br/>
+                    <span (click)="updateAddonQuantity(addonIndex, false)"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                    </span>
+                  </div>
+                </md-card-content>
+              </md-card>
+            </div>
+          </div>
+        </div>
+      </md-tab>
+      <md-tab>
+        <template md-tab-label>
+          <span class="warranty">WARRANTY</span>
+        </template>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 addonlist">
+          <div class="text-center" style="min-height: 100px; padding:20px 0;">
+            <br/><br/> Under Construction ..........
+          </div>
+        </div>
+      </md-tab>
+      <md-tab>
+        <template md-tab-label>
+          <span class="additional-specs">ADDITIONAL SPECS</span>
+        </template>
+        <div class="additional-list col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <div>
+            <!--Removed table-responsive class mobile adjustment-->
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <td>OS</td>
+                  <td>{{productDetails.attributes?.osSpecs}}</td>
+                </tr>
+                <tr>
+                  <td>RAM</td>
+                  <td>{{productDetails.attributes?.ramSpecs}}</td>
+                </tr>
+                <tr>
+                  <td>Hard Drive</td>
+                  <td>{{productDetails.attributes?.hardDriveSpecs}}</td>
+                </tr>
+                <tr>
+                  <td>Graphics</td>
+                  <td>{{productDetails.attributes?.graphicSpecs}}</td>
+                </tr>
+                <tr>
+                  <td>Display</td>
+                  <td>{{productDetails.attributes?.displaySize}}</td>
+                </tr>
+                <tr>
+                  <td>Resolution</td>
+                  <td>{{productDetails.attributes?.displayResolution}}</td>
+                </tr>
+                <tr>
+                  <td>Sound</td>
+                  <td>{{productDetails.attributes?.soundSpecs}}</td>
+                </tr>
+                <tr>
+                  <td>Speaker</td>
+                  <td>{{productDetails.attributes?.speakerSpecs}}</td>
+                </tr>
+                <tr>
+                  <td>Keyboard</td>
+                  <td>{{productDetails.attributes?.keyboardSpecs}}</td>
+                </tr>
+                <tr>
+                  <td>Webcam</td>
+                  <td>{{productDetails.attributes?.webcamSpecs}}</td>
+                </tr>
+                <tr>
+                  <td>Microphone</td>
+                  <td>{{productDetails.attributes?.microphoneSpecs}}</td>
+                </tr>
+                <tr>
+                  <td>Bluetooth</td>
+                  <td>{{productDetails.attributes?.bluetoothSpecs}}</td>
+                </tr>
+                <tr>
+                  <td>Smart Card</td>
+                  <td>{{productDetails.attributes?.smartCardReaderSpecs}}</td>
+                </tr>
+                <tr>
+                  <td>Network</td>
+                  <td>{{productDetails.attributes?.networkInterfaceSpecs}}</td>
+                </tr>
+                <tr>
+                  <td>Ports</td>
+                  <td>{{productDetails.attributes?.portSpecs}}</td>
+                </tr>
+                <tr>
+                  <td>Expansion Slots</td>
+                  <td>{{productDetails.attributes?.expansionSlots}}</td>
+                </tr>
+                <tr>
+                  <td>Delivery Time</td>
+                  <td>{{productDetails.attributes?.deliveryTime}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </md-tab>
+            <md-tab>
+        <template md-tab-label>
+          <span class="warranty">POINT OF CONTACT</span>
+        </template>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 addonlist">
+          <div class="text-center" style="min-height: 100px; padding:20px 0;">
+            <br/><br/> Under Construction ..........
+          </div>
+        </div>
+      </md-tab>
+    </md-tab-group>
+  </div>
+  </div>
+  <div style="clear: both;"></div>
+  <div class="total no-padding col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <div class="container padding-left-none">
+      <div class="col-xs-6 padding-left-none col-sm-12 col-md-6 col-lg-6 col-xl-6 total-price"></div>
+      <div class="add-button col-xs-6 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <a class="total-price">Total: {{totalAmount | currency:'USD': true}}</a>
+          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#orderModal" (click)="addToOrder()">ADD TO ORDER</button>
+      </div>
+    </div>  
+  </div>
+
+
+<!-- POP UP Modal -->
+<div class="modal fade" id="orderModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- POP UP Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <div><button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+        <div class="confirm">Added to your order!</div>
+      </div>
+      <div class="modal-body col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="modal-left col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <a href class="continue" data-dismiss="modal" [routerLink]="['']">CONTINUE SHOPPING</a>
+        </div>
+        <div class="modal-right col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <button type="button" class="btn btn-default" data-dismiss="modal" [routerLink]="['/ordersummary']">ORDER SUMMARY</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

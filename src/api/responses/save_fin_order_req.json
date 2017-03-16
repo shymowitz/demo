@@ -1,0 +1,43 @@
+{
+    "customerId": "FORG_201611260049238206345_0500_86946538A688400AA491DC3C8C1E0284",
+    "orders": [
+        {
+            "clinId": "CLIN_201607292236575532421_XXXX_18AACA623757451B9046EBF0C378F5F2",
+            "quantity": 3,
+            "contractorId": "CTRC_201611260049338730532_0500_735432B8CFBD4AD184A1AF34427FA748",
+            "options": [
+                {
+                    "clinId": "CLIN_201607292236575590895_XXXX_6FF643E01F6A49ACA99FAEE331AEA648",
+                    "quantity": 2
+                },
+                {
+                    "clinId": "CLIN_201607292236575521308_XXXX_9D816C647E2C48E989880C715A12FBA9",
+                    "quantity": 2
+                }
+            ]
+        },
+        {
+            "contractorId": "CTRC_201611260049338730532_0500_735432B8CFBD4AD184A1AF34427FA748",
+            "clinId": "CLIN_201607292236575587135_XXXX_ACAB2369379D46DF8478CBA08C4888A3",
+            "quantity": 4,
+            "options": [
+                {
+                    "clinId": "CLIN_201607292236575587083_XXXX_D040C4B2981149B5B7B564A8519EF2B9",
+                    "quantity": 1
+                },
+                {
+                    "clinId": "CLIN_201607292236575537697_XXXX_AF5BBE7212FD4BEAB2BB52F94918EC9E",
+                    "quantity": 2
+                },
+                {
+                    "clinId": "CLIN_201607292236575580756_XXXX_012C72BD42334F229B0E6587CD2B44E3",
+                    "quantity": 2
+                },
+                {
+                    "clinId": "CLIN_201607292236575524437_XXXX_AFD6B91D2E9B4332B17A7482A3B76B03",
+                    "quantity": 3
+                }
+            ]
+        }
+    ]
+}

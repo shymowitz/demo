@@ -1,0 +1,18 @@
+Request JSON:
+	{
+userId: ''
+}
+Response JSON:
+    "orders": [
+        {
+            "orderID": 1124,
+            "orderDate": "19-12-2016",
+            "totalPrice": 200,
+            "status": "pending"
+      }{
+            "orderID": 1124,
+            "orderDate": "19-12-2016",
+            "totalPrice": 200,
+            "status": "pending"
+      }]
+

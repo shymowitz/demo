@@ -1,0 +1,30 @@
+<!-- Place Order popup -->
+<poc-modal #pocModal [modal]="'pocModal'"></poc-modal>
+<!-- RFQ popup -->
+<div bsModal #childModal="bs-modal" 
+   id="long" data-replace="true"
+   class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <input type="hidden" [(ngModel)]="order" #ctrl="ngModel"  />
+        <!-- RFQ Modal content-->
+        <div class="modal-content" >
+            <div class="modal-header">
+                <div><button type="button" class="close" data-dismiss="modal" (click)="cancel();"><span>&times;</span></button></div>
+                <div class="confirm">Attention!</div>
+            </div>
+            <div class="modal-body">
+                <div class="msg">Your order is below $150,000. You do not have to create an RFQ. You can place an order directly by clicking
+                    "Place Order".</div>
+            </div>
+            <div class="modal-footer">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 rfq">CREATE RFQ</div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <button md-raised-button color="primary" (click)="pocModal.showModal(ctrl.value, 1);cancel()" data-dismiss="modal">PLACE ORDER</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

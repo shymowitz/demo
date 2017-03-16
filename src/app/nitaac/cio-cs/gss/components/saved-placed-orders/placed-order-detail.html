@@ -1,0 +1,170 @@
+<!-- <div class="breadcrum col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <a [routerLink]="['']" class="gobackarrow"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+    <span class="product-title">Order Summary</span>
+</div>
+-->
+
+<div role="button" (click)="back()"
+     class="pull-left gobackarrow col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+     <i class="fa fa-angle-left" aria-hidden="true"></i>
+     <span class="product-title"></span>
+    <span class="undeline-text">Back</span>
+</div>
+
+<div *ngIf="orders.length>0" class="order-id col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+   Order ID# {{orderNameCode}}
+</div>
+<!--Pop up if order is above 150k -->
+<div *ngIf="orders.length>0">
+    <div *ngIf="showAlert">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div><button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+                    <div class="msg">Attention!</div>
+                </div>
+                <div class="modal-body">
+                    Part of your order is above $150,000 dollars. After you finalize your order summary you will only be able to create an RFQ
+                    for that part of the order. If you want to place an order directly please decrease that part of the order
+                    to less then $150,000 dollars.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="orders container-fluid">
+        <div *ngIf="userType != 'CUSTOMER'" class="order">
+            <md-card class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="line-empty col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"></div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    Order #:<br/> {{orderNameCode}}
+                    <hr>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    Expected Delivery Date<br/> {{expectedDeliveryDate}}
+                    <hr>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    Customer Name<br/> {{customerName}}
+                    <hr>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    Customer Email<br/> {{customerEmail}}
+                    <hr>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    Organization<br/> {{customerOrgName}}
+                    <hr>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    Shipping Address<br/> {{customerShippingAddress}}
+                    <hr>
+                </div>
+            </md-card>
+        </div>
+        <div *ngFor="let order of orders;let index=index" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="order">
+                <md-card class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 card">
+                    <div class="trash" *ngIf="userType==='CUSTOMER'"><i class="material-icons" (click)="deleteModal.showModal(order)">delete</i></div>
+                    <div class="product-img col-xs-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                        <!--<img [src]="order.attributes?.imageUrl || config.defaultImage">-->
+                        <!--<img [src]="config?.defaultImage">-->
+                        <img md-card-image alt="Product image" class="product-image grow" src='{{order.image}}'
+                        />
+                    </div>
+                    <div class="product-content col-xs-12 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pl-none pr-none">
+                            <div class="product-name col-xs-8 col-sm-12 col-md-6 col-lg-6 col-xl-6">{{order.attributes?.itemName}}</div>
+                            <div class="quan-price col-xs-4 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <div class="pull-right">
+                                    <div class="quantity">
+                                        <span (click)="updateQuantity(index, true, order.orderAmount)">
+                                            <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                        </span><br/>
+                                        <span class="count">{{order.quantity}}</span><br/>
+                                        <span (click)="updateQuantity(index, false, order.orderAmount)"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                    </div>
+                                    <div class="price">{{order.attributes?.discountedUnitPrice | currency:'USD':true}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 product-desc">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"><b>Contract Holder</b><br/>
+                                <p>{{order.attributes?.contractorName}}</p>
+                                <b>Manufacture Part Number:</b>
+                                <p>{{getOemPartNum(order)}}</p>
+
+                            </div>
+                            <!--<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"><p>{{order.attributes?.itemSpecifications}}</p></div>-->
+
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 os-spec">{{order.attributes?.itemSpecifications | slice:0:displayCharCount}}
+                                <!--<span *ngIf="order.attributes?.itemSpecifications.length>displayCharCount" class="spec" id="spec{{index}}"
+                                      [tooltip]="order.attributes?.itemSpecifications" parentSelector="#spec{{index}}" tooltipClass="custom-tooltip">...See More</span>-->
+                            </div>
+                        </div>
+                        <div class="view-add col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" *ngIf="order.addons.length>0">
+                            <span class="pull-right">VIEW ADD ONS<a (click)="toggleAddons(index)"><i class="fa fa-angle-up" aria-hidden="true"></i></a></span>
+                        </div>
+                    </div>
+                </md-card>
+                <div class="addons" *ngIf="viewAddons(index)">
+                    <div class="content">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 addonlist">
+                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3" *ngFor="let option of order.addons">
+                                <md-card class="product">
+                                    <md-card-content>
+                                        <md-card-title>{{addonsType[option.configurationTypeCode]}}</md-card-title>
+                                        <div class="desc">{{option.itemName}}</div>
+                                        <div>
+                                            <span class="price">{{option.discountedUnitPrice | currency:'USD': true}}</span>
+                                            <span class="quantity">
+                                                <span (click)="updateQuantity(option, true, order.orderAmount)"><i class="fa fa-angle-up" aria-hidden="true"></i></span><br/>
+                                            <span class="count">{{option.quantity}}</span><br/>
+                                            <span (click)="updateQuantity(option, false, order.orderAmount)"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                            </span>
+                                        </div>
+                                    </md-card-content>
+                                </md-card>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  save and checkout buttons  -->
+            <div class="total no-padding col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 " *ngIf="orders.length>0">
+               <div class="container-fluid"  *ngIf="userType==='CONTRACTOR'">
+                  <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 col-xl-6"></div>
+                  <div class="add-button col-xs-6 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                     <a class="total-amount">Total: {{totalAmount | currency:'USD': true}}</a>
+                     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" (click)="showChildModal()">Fulfill Order</button>
+                  </div>
+               </div>
+               <div class="container-fluid" *ngIf="footer()==='customer_save'">
+                  <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 col-xl-6"></div>
+                  <div class="add-button col-xs-6 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                     <a class="total-amount">Total: {{totalAmount | currency:'USD': true}}</a>
+                     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" (click)="finalizeOrder()">CHECKOUT</button>
+                 </div>
+              </div>
+              <div class="container-fluid order-info" *ngIf="footer()==='customer_place'">
+                 <a class="download-info pull-left" (click)="download()">DOWNLOAD SUMMARY</a>
+                 <button class="rfq btn btn-default pull-right" 
+                     (click)="rfqModal.showModal(order, index)">CREATE RFQ
+                 </button>
+                 <button type="button" *ngIf="totalAmount <= config.rfqLimit" class="rfq btn btn-default pull-right" 
+                     (click)="pocModal.showModal(order, index)">PLACE ORDER</button>
+                 <button type="button" class="btn btn-default" *ngIf="totalAmount>config.rfqLimit">Standard Configuration</button>
+             </div>
+           </div>
+        </div> <!--  end order loop -->
+    </div>
+</div>
+<!--displays message if there are no orders added-->
+<div *ngIf="orders.length == 0">
+    <span>You have not order anything.</span>
+</div>
+
+<poc-modal #pocModal [modal]="'pocModal'"></poc-modal>
+<rfq-modal #rfqModal [modal]="'rfqModal'"></rfq-modal>

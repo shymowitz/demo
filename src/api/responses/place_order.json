@@ -1,0 +1,15 @@
+{
+	"contractHolderId": "CTAFO201611260049238206345_0500_EF7BE48AA032431199DC70627F52433F",
+	"orderId": "4823840",
+	"pocId": "PERX_201611260049278634982_0500_000B118D267B49D88C9356303C70BF42",
+	"shippingAddress" :
+   {
+		"street1": "1950 Roland Clark Place",
+		"street2": "Suite 210",
+	   "street3": "",
+		"city": "Reston",
+		"state": "VA",
+		"zipcode": "20191"
+   },
+	"expectedDate": "2017-12-20T11:32:33-05:00"
+}

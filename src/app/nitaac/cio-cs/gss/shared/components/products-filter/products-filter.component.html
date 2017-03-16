@@ -1,0 +1,71 @@
+<!--  below liwen added filters -->
+<div class="category desktop-none" (click)="showCategory=!showCategory">
+	<span class="text">Filter</span>
+	<i *ngIf="showCategory" class="fa fa-angle-down" aria-hidden="true"></i>
+	<i *ngIf="!showCategory" class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+<div class="selected-category col-md-8">
+	<span *ngFor="let id of selects.ids">
+	   <span *ngIf="selects[id].selected.length>0" class="filter-tags">
+		  <div class="type">
+			  <div class="title">{{selects[id].label}}: </div>
+			  <div *ngFor="let option of selects[id].selected" class="tag">{{getLabel(selects[id].options,option)}}
+				  <span class="close-tag" (click)="filterType({'id':option},id)"><i class="fa fa-times" aria-hidden="true"></i></span>
+			 </div>
+          </div>
+      </span>
+    </span>
+</div>
+<!-- above filter heading -->
+<!-- below filter dropdown -->
+<div id="filter-list" *ngIf="showCategory" class="show-category category mobile-none">
+	<span class="clear" *ngIf="checkFiltersApplied()" (click)="clearFilters()">Clear All Filters</span>
+	<div class="dropdown filter-drp" *ngFor="let id of selects.ids">
+		<div>
+			<span class="main-label">{{selects[id].label}}</span>
+			<input type="hidden" [(ngModel)]="selects[id].applied" />
+
+			<ul class="brands">
+				<li *ngFor="let opt of selects[id].options" type="none">
+					<div *ngIf="id === 'configuration'">
+						<div *ngIf="opt.id != 'D2' && opt.id != 'D3'" class="checkbox">
+							<label>
+							     <input type="checkbox" [checked]="selects[id].selected.indexOf(opt.id)>=0" (click)="filterType(opt, id)"/> {{opt.label}}
+								<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+								 </label>
+						</div>
+						<div *ngIf="opt.id === 'D2' || opt.id === 'D3'" class="checkbox">
+							<label>
+							    <input type="checkbox" [disabled]="desktopDisabled" [checked]="selects[id].selected.indexOf(opt.id)>=0" (click)="filterType(opt, id)"/> {{opt.label}}
+								<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+								</label>
+						</div>
+					</div>
+					<div *ngIf="id != 'configuration'">
+						<div *ngIf="isBrand(opt.id)" class="checkbox">
+							<label>
+							 <input type="checkbox" [checked]="selects[id].selected.indexOf(opt.id)>=0" (click)="filterType(opt, id)"/> {{opt.label}} ({{brandProductCount[opt.id]}})
+							<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+							 </label>
+						</div>
+						<div *ngIf="!isBrand(opt.id)" class="checkbox">
+							<label>
+                            <input type="checkbox" [checked]="selects[id].selected.indexOf(opt.id)>=0" (click)="filterType(opt, id)"/> {{opt.label}}
+							<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+							 </label>
+						</div>
+					</div>
+				</li>
+				</ul>
+
+		</div>
+	</div>
+	<label><span class="main-label">Price </span> 
+		    	<select class="price-filter form-control" (change)="onOrderChange($event)">
+			    <option value="lowhigh">Low - High</option>
+				  <option value="highlow">High - Low</option>
+		   </select>
+	    </label>
+</div>
+
+<!-- above liwen added filters -->

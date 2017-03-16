@@ -1,0 +1,97 @@
+.orders {
+    .per-page {
+        width: 30px;
+        text-align: center;
+    }
+    .per-page-text {
+        line-height: 25px; 
+        vertical-align:sub;
+    }
+    /*
+     /deep/ selector tells Angular to "reach in" to the component and apply styles to that too
+    */
+   pagination-controls /deep/ .ng2-pagination li {
+       cursor: pointer;
+   }
+   .order-title {
+       line-height: 40px;
+       font-size: 1.2em;
+       background-color: #eaeaed; /* #F7F7F7; */
+   }
+   .customer-info {
+      line-height: 40px;
+   }
+   .order-per-page {
+      line-height: 44px!important;
+    }
+    .saved-product {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 1340px;
+        margin-left: -94px;
+        height: 140px;
+        margin-bottom: 26px;
+    }
+    .saved-title {
+        width: 1340px;
+        height: 40px;
+        background-color: #1191C1;
+        box-shadow: 0 1px 2px 0 rgba(204,204,204,0.9);
+        margin-top: -24px;
+        padding-bottom: 25px;
+        .product-name {
+            padding-top: 23px;
+            color: #0A5694;
+            font-size: 20px;
+            font-family: -webkit-body;
+            padding-left: 30px;
+        }
+        .product-price {
+            padding-top: 23px;
+            color: #0A5694;
+            font-size: 20px;
+            padding-left: 39%;
+        }
+    }
+    .customer-info {
+        width: 1340px;
+        height: 50px;
+        background-color: #FFF;
+        .product-name {
+            font-size: 17px;
+            color: #212121;
+            padding-left: 15px;
+        }
+        .product-order {
+            a {
+                padding-left: 53%;
+                width: 97px;
+                height: 19px;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 19px;
+                color: #0A5694;
+                &:hover{
+                text-decoration: none;
+                }
+            }
+            
+        }
+        .btn-default {
+                margin-left: 51px;
+                width: 130px;
+                height: 40px;
+                background-color: #428533;
+                box-shadow: 0 3px 1px 0 #2E5B24;
+                border-radius: 2px;
+                color: #F7F7F7;
+                border-color: #2E5B24;
+                font-size: 16px;
+                padding-left: 7px;
+            }
+        }
+}
+
+a:hover{
+  cursor: pointer !important;
+}

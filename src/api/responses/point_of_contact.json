@@ -1,0 +1,15 @@
+Search for POC
+Request JSON:
+	{
+	name:
+}
+Response JSON:
+
+{
+	userId:'4823840',
+	firstName:'fname',
+	lastName:'lastname',
+	email:'',
+	phNo:'',
+   orgId:
+}

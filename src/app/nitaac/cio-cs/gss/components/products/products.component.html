@@ -1,0 +1,134 @@
+<div class="prod-container">
+	<!--  below liwen added filters -->
+   <div class="search-filter col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mobile-none">
+		<div class="row">
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+		       <products-filter (filterUpdated)="handleCategoryChange($event)"></products-filter>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+		       <search [searchString]="searchString" (filterSearch)="handleSearchChange($event)"></search>
+			</div>
+			<!--
+			<div class="col-md-2 category desktop-none" (click)="showCategory=!showCategory">
+				<span class="text">Filter</span><i *ngIf="showCategory" class="fa fa-angle-down" aria-hidden="true"></i><i *ngIf="!showCategory" class="fa fa-angle-up" aria-hidden="true"></i>
+			</div>
+			<div class="col-md-5">
+				<span *ngFor="let id of selects.ids">
+					<span *ngIf="selects[id].selected.length>0" class="filter-tags">
+						<div class="type">
+							<div class="title">{{selects[id].label}}: </div>
+							<div *ngFor="let option of selects[id].selected" class="tag">{{getLabel(selects[id].options,option)}}<span class="close-tag" (click)="filterType({'id':option},id)"><i class="fa fa-times" aria-hidden="true"></i></span></div>
+						</div>
+					</span>
+				</span>
+			</div>
+			<div class="col-md-5 header-search pull-right text-right">
+				<span md-prefix><i class="fa fa-search" aria-hidden="true"></i></span> 
+				<md-input placeholder="Search" [(ngModel)]='searchString' (keyup)="onKey($event)">
+                </md-input>
+				<span class="type"><i class="fa fa-th-list" aria-hidden="true"></i></span>
+				<span class="type"><i class="fa fa-th" aria-hidden="true"></i></span>
+			</div>
+			-->
+		</div> 
+	</div>
+	<!--
+	<div class="clear-both"></div>
+	<div id="filter-list" *ngIf="showCategory" class="show-category category col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 mobile-none">
+		<span class="clear" *ngIf="checkFiltersApplied()" (click)="clearFilters()">Clear All Filters</span>
+		<div class="dropdown filter-drp" *ngFor="let id of selects.ids">
+			<label>
+				 <span class="main-label">{{selects[id].label}}</span>
+				 <input type="hidden" [(ngModel)]="selects[id].applied" />
+
+			    <ul class="brands">
+			       <li *ngFor="let opt of selects[id].options" type="none">
+		             <div *ngIf="id === 'configuration'">
+							 <div *ngIf="opt.id != 'D2' && opt.id != 'D3'" class="checkbox">
+								 <label>
+							     <input type="checkbox" [checked]="selects[id].selected.indexOf(opt.id)>=0" (click)="filterType(opt, id)"/> {{opt.label}}
+								<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+								 </label>
+						    </div>
+						    <div *ngIf="opt.id === 'D2' || opt.id === 'D3'" class="checkbox">
+								<label>
+							    <input type="checkbox" [disabled]="desktopDisabled" [checked]="selects[id].selected.indexOf(opt.id)>=0" (click)="filterType(opt, id)"/> {{opt.label}}
+								<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+								</label>
+						    </div>
+					 </div>
+					 <div *ngIf="id != 'configuration'">
+						 <div *ngIf="isBrand(opt.id)" class="checkbox">
+							 <label>
+							 <input type="checkbox" [checked]="selects[id].selected.indexOf(opt.id)>=0" (click)="filterType(opt, id)"/> {{opt.label}} ({{brandProductCount[opt.id]}})
+							<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+							 </label>
+			             </div>
+						 <div *ngIf="!isBrand(opt.id)" class="checkbox">
+							 <label>
+                            <input type="checkbox" [checked]="selects[id].selected.indexOf(opt.id)>=0" (click)="filterType(opt, id)"/> {{opt.label}}
+							<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+							 </label>
+			             </div>
+					 </div>
+			      </li>
+　　　　　       </ul>
+
+			</label>
+		</div>
+		<label><span class="main-label">Price </span> 
+		    	<select class="price-filter form-control" [(ngModel)]="orderBy">
+			    <option value="lowhigh">Low - High</option>
+				<option value="highlow">High - Low</option>
+		   </select>
+	    </label>
+	</div> -->
+	<!-- above liwen added filters -->
+
+	<div (click)="onClick($event)">
+		<div class="products col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" *ngIf="products.length > 0">
+			<!-- products| ProductPipe:searchString:selectedCategory:appliedFilters:appliedBrands:orderBy -->
+			<div *ngFor='let product of filteredProducts();let index = index'>
+			   <div class="box col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+					<md-card class="product" [routerLink]="[product.productId,'offerings']">
+						<div class="product-categories">
+							<span class="category-name">{{filterCodes[product.attributes.configurationTypeCode]}}</span>
+							<span *ngIf="checkOmb(product.attributes.configurationTypeCode)" class="tag">OMB</span>
+						</div>
+						<!--<img md-card-image alt="Main image" [src]="product.attributes?.imageUrl || config?.defaultImage" class="product-image grow">-->
+						<img md-card-image alt="Product image" class="product-image grow" src='{{gssFileSystemUrl}}/{{product.relationships?.contractors[0].contractorClinId}}/{{product.relationships?.contractors[0].contractorClinId}}-1.png'
+						/>
+						<!--<img md-card-image alt="Product image" class="product-image grow"
+                            src='{{gssFileSystemUrl}}/{{product.relationships?.contractors[0].contractorClinId}}/{{product.relationships?.contractors[0].contractorClinId}}-1.png'/>-->
+							<md-card-content>
+							<md-card-title title="{{ product.attributes?.nameCode}}">{{ product.attributes?.nameCode }}
+								<!--<span *ngIf="product.attributes?.nameCode.length>20">...</span>-->
+							</md-card-title>
+							<div class="price">From {{ product.minBaseProductPrice| currency: 'USD': true }}</div>
+							
+							<!--oemMfrCode: {{product.attributes?.oemMfrCode}} should remove-->
+							<div class="offers">{{ product.numOfOfferings }} offerings
+							</div>
+							<div class="view-link">
+								<!--<span class="pull-left">
+										From {{ product.minBaseProductPrice| currency: 'USD': true }}
+									</span>-->
+								<span>VIEW OFFERINGS</span>
+							</div>
+						</md-card-content>
+					</md-card>
+				</div>
+			</div>
+		</div>
+		<div *ngIf="!onLoading && filteredProducts().length===0" class="text-center">
+           No product found with those specific filters
+	    </div>
+		<!--loader time-->
+		<div *ngIf="onLoading" class="text-center">
+           Loading ...
+           <i class="fa fa-spinner fa-spin" style="font-size:24px"></i>
+		</div>
+	</div>
+
+</div>
+

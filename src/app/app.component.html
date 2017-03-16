@@ -1,0 +1,13 @@
+<div *ngIf="getUserType() == 'CUSTOMER'">
+  <CustomerGssHeader></CustomerGssHeader>
+</div>
+<div *ngIf="getUserType() == 'CONTRACTOR'">
+  <CHGssHeader></CHGssHeader>
+</div>
+<div *ngIf="getUserType() == 'NITAAC'">
+  <NitaacGssHeader></NitaacGssHeader>
+</div>
+
+<div id="main-body" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+  <router-outlet></router-outlet>
+</div>

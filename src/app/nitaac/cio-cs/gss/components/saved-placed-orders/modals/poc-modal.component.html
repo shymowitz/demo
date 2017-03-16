@@ -1,0 +1,97 @@
+<!-- place order popup -->
+<div bsModal #childModal="bs-modal"  class="modal fade" role="dialog">
+   <div class="modal-dialog modal-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close pull-right"  data-dismiss="modal" aria-label="Close" (click)="closePOC();">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div> 
+            <div class="modal-body">
+                <div class="container modal-container">
+                    <form name="pocForm">
+                        <h3>Order Type*</h3>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 order-type">
+                            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                                <md-radio-group [(ngModel)]="orderCardType" name="orderType">
+                                    <md-radio-button value="ccorder">Credit Card Order</md-radio-button>
+                                    <md-radio-button class="po-order" value="poorder">PO Order</md-radio-button>
+                                </md-radio-group>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">UPLOAD FILE</div>
+                        </div>
+                        <h3>Point Of Contact*</h3>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-checkbox [checked]="selfPOC" (change)="setSelfPOC()">Assign myself as POC</md-checkbox>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="Search Users" [disabled]="selfPOC" [(ngModel)]="searchText" (ngModelChange)="searchUser($event)" name="username"
+                                    #username="ngModel">
+                                    </md-input>
+                                    <div *ngIf="searchedUsers.length>0" id="searchedUsers">
+                                        <ul>
+                                            <li *ngFor="let suser of searchedUsers"><a (click)="selectUser(suser)">{{suser.firstName}} {{suser.lastName}} ({{suser.email}})</a></li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="Full Name" [ngModel]="pocDetails.firstName" name="fullname" readonly></md-input>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="Organization" [ngModel]="pocDetails.orgName" name="orgid" readonly></md-input>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="Email" [ngModel]="pocDetails.email" name="email" readonly></md-input>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="Phone Number" [ngModel]="pocDetails.phNo" name="phone" readonly></md-input>
+                            </div>
+                        </div>
+                        <h3>Shipping Information</h3>
+                        <div class="col-xs-12 col-sm-12 co-md-12 col-lg-12 col-xl-12">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="Street Name and Number" [ngModel]="pocDetails.address?.street1" name="street"></md-input>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="City" [ngModel]="pocDetails.address?.city" name="city"></md-input>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 co-md-12 col-lg-12 col-xl-12">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="State" [ngModel]="pocDetails.address?.state" name="state"></md-input>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="Zip Code" [ngModel]="pocDetails.address?.zip" name="zip"></md-input>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <md-input placeholder="Country" name="country" [ngModel]="country"></md-input>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 date">
+                            <label>Expected Delivery Date :</label>
+                            <input type="date" name="expdate" [ngModel]="expDate">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 submit-btn">
+                            <md-checkbox [checked]="acceptTerms" [disabled]="!pocDetails.userId" [(ngModel)]="acceptTerms" name="terms"></md-checkbox>
+                            <div class="text-wrap">
+                                By clicking submit, you agree to our terms that you have reviewed all offerings provided by the contract holder for these products, before selecting this offer.
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary" [disabled]="!acceptTerms" (click)="placeOrder()">Submit</button>
+                            </div>
+                        </div>
+                       
+                    </form>
+                </div>
+            </div>
+        </div>
+  </div>
+</div>

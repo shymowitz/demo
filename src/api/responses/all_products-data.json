@@ -1,0 +1,2821 @@
+{  
+   "productCount":83,
+   "data":[  
+      {  
+         "productId":1,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":1011,
+         "numOfOfferings":4,
+         "attributes":{  
+            "configurationTypeCode":"L4",
+            "hardDriveCode":"256",
+            "imageUrl":"http://images.apple.com/macbook-air/images/techspecs_headline_11inch_2x.jpg",
+            "nameCode":"11\" MacBook Air 1.6Ghz i5",
+            "oemMfrName":"Apple",
+            "oemMfrCode":"MJVP2LL/A",
+            "osCode":"mac",
+            "processorCode":"i5",
+            "ramCode":"4",
+            "weightCode":"2.38 Ibs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":1088,
+                  "osSpecs":"OS X El Capitan (OS 10.11.x)",
+                  "clinIdf":"CLIN_201609142223493350090_XXXX_D3145E2414EF4B909D67D11F03978087"
+               },
+               {  
+                  "contractorName":"INTELLIGENT DECISIONS, INC.",
+                  "baseProductPrice":1020,
+                  "osSpecs":"OS X El Capitan (OS 10.11.x)",
+                  "clinIdf":"CLIN_201609142223493395151_XXXX_0E9293F2E4524D3BA1CB1917CC399A46"
+               },
+               {  
+                  "contractorName":"BLUE TECH INC.",
+                  "baseProductPrice":1011,
+                  "osSpecs":"OS X El Capitan (OS 10.11.x)",
+                  "clinIdf":"CLIN_201609142223493364538_XXXX_8E671E4EB21147868687A8BD657465CD"
+               },
+               {  
+                  "contractorName":"RED RIVER COMPUTER CO., INC.",
+                  "baseProductPrice":1184,
+                  "osSpecs":"OS X El Capitan (OS 10.11.x)",
+                  "clinIdf":"CLIN_201609142223493383283_XXXX_93947704FD24477092E2EE445CA79D37"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":2,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":1011,
+         "numOfOfferings":5,
+         "attributes":{  
+            "configurationTypeCode":"L4",
+            "hardDriveCode":"256",
+            "imageUrl":"Apple MacBook Air 13.jpg",
+            "nameCode":"13\" MacBook Air 1.6Ghz i5",
+            "oemMfrName":"Apple",
+            "oemMfrCode":"MJVG2LL/A",
+            "osCode":"mac",
+            "processorCode":"i5",
+            "ramCode":"4",
+            "weightCode":"2.96 pounds "
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":1175,
+                  "osSpecs":"OS X El Capitan (OS 10.11.x)",
+                  "clinIdf":"CLIN_201609142223493395457_XXXX_5B95C011BCF14EB8A551C61EA369AD68"
+               },
+               {  
+                  "contractorName":"INTELLIGENT DECISIONS, INC.",
+                  "baseProductPrice":1113,
+                  "osSpecs":"OS X El Capitan (OS 10.11.x)",
+                  "clinIdf":"CLIN_201609142223493364662_XXXX_4AF16F84B05142B6B06F1A783235E29E"
+               },
+               {  
+                  "contractorName":"ANACAPA MICRO PRODUCTS, INC.",
+                  "baseProductPrice":1167,
+                  "osSpecs":"OS X El Capitan (OS 10.11.x)",
+                  "clinIdf":"CLIN_201609142223493341266_XXXX_7AB529B7F4464C49A08922570C54469F"
+               },
+               {  
+                  "contractorName":"BLUE TECH INC.",
+                  "baseProductPrice":1103,
+                  "osSpecs":"OS X El Capitan (OS 10.11.x)",
+                  "clinIdf":"CLIN_201609142223493307004_XXXX_2E163DF5EC414B5F959A2E9C0293F892"
+               },
+               {  
+                  "contractorName":"RED RIVER COMPUTER CO., INC.",
+                  "baseProductPrice":1292,
+                  "osSpecs":"OS X El Capitan (OS 10.11.x)",
+                  "clinIdf":"CLIN_201609142223493300156_XXXX_8590F5CA1183406B8F852C7E90EE3CF8"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":3,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":1011,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"T2",
+            "hardDriveCode":"128",
+            "imageUrl":"RUGGED 14.JPG",
+            "nameCode":"Dell Latitude 14 Rugged Extreme i3",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"[210-ACPL][338-BGPI]",
+            "osCode":"pc",
+            "processorCode":"i3",
+            "ramCode":"8",
+            "weightCode":""
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"EN-NET SERVICES, L.L.C.",
+                  "baseProductPrice":3384,
+                  "osSpecs":"Windows 10 Pro 64bit English, French, Spanish",
+                  "clinIdf":"CLIN_201609142223493387221_XXXX_43E55F975BEA48389405F5BF40CF65A7"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":4,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":1011,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"T2",
+            "hardDriveCode":"256",
+            "imageUrl":"RUGGED 14.JPG",
+            "nameCode":"Dell Latitude 14 Rugged Extreme i5",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"[210-ACPL][338-BGPE]",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"16",
+            "weightCode":""
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"EN-NET SERVICES, L.L.C.",
+                  "baseProductPrice":3991,
+                  "osSpecs":"Windows 10 Pro 64bit English, French, Spanish",
+                  "clinIdf":"CLIN_201609142223493384578_XXXX_A96FC3872D0649B2A0E2A6B5BACD5308"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":5,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":1011,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"T2",
+            "hardDriveCode":"512",
+            "imageUrl":"RUGGED 14.JPG",
+            "nameCode":"Dell Latitude 14 Rugged Extreme i7",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"   [210-ACPL]   [338-BGPH] ",
+            "osCode":"pc",
+            "processorCode":"i7",
+            "ramCode":"16",
+            "weightCode":""
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"EN-NET SERVICES, L.L.C.",
+                  "baseProductPrice":4916,
+                  "osSpecs":"Windows 10 Pro 64bit English, French, Spanish",
+                  "clinIdf":"CLIN_201609142223493396148_XXXX_A157DA7383414360A15E0B3C94A87452"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":6,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":1011,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"T2",
+            "hardDriveCode":"500",
+            "imageUrl":"Dell Latitude 14 Rugged Extreme.jpg",
+            "nameCode":"Dell Latitude 14 Rugged Laptop",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"[210-ADEL]",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":"6.6 lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":1607,
+                  "osSpecs":"Windows 7 Professional English/French 64bit (Includes Windows 8.1 Pro license)",
+                  "clinIdf":"CLIN_201609142223493353286_XXXX_C58809F3212542E0A1A44B1A116A2AB9"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":7,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":1011,
+         "numOfOfferings":3,
+         "attributes":{  
+            "configurationTypeCode":"L2",
+            "hardDriveCode":"250",
+            "imageUrl":"",
+            "nameCode":"Dell Latitude E5270",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"379-BCFX",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":""
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"DELL FEDERAL SYSTEMS L.P.",
+                  "baseProductPrice":1124,
+                  "osSpecs":"Win 10 Pro 64 English, French, Spanish",
+                  "clinIdf":"CLIN_201607292236575565107_XXXX_22D10E6C7FA94710880700C75E375258"
+               },
+               {  
+                  "contractorName":"ANACAPA MICRO PRODUCTS, INC.",
+                  "baseProductPrice":1379,
+                  "osSpecs":"Windows 10 OS Professional Recovery 64bit - DVD (620-AAYW) ",
+                  "clinIdf":"CLIN_201607292236575532445_XXXX_B53EBF3F00F945DE96D0AFA9AF258D21"
+               },
+               {  
+                  "contractorName":"PANAMERICA COMPUTERS, INC.",
+                  "baseProductPrice":1323,
+                  "osSpecs":"Windows 7 Professional English, French, Spanish 64bit (Includes Windows 10 Pro License)",
+                  "clinIdf":"CLIN_201607292236575531131_XXXX_D466B873BE5A461BA45A37A738F51F9C"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":8,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":1011,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L1",
+            "hardDriveCode":"256",
+            "imageUrl":"Dell Latitude 14 5000 Series.jpg",
+            "nameCode":"Dell Latitude E5450",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"210-ACTC [379-BCCJ]",
+            "osCode":"pc",
+            "processorCode":"i7",
+            "ramCode":"8",
+            "weightCode":" 3.98 lbs."
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":1550,
+                  "osSpecs":"Windows 7 Professional English, French, Spanish 64bit (Includes Windows 10 Pro License)",
+                  "clinIdf":"CLIN_201607292236575551894_XXXX_2A20344FC78A4B19AC00D47D88ECFFD1"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":9,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":1011,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L1",
+            "hardDriveCode":"500",
+            "imageUrl":"",
+            "nameCode":"Dell Latitude E5470",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"210-AFUC",
+            "osCode":"pc",
+            "processorCode":null,
+            "ramCode":"8",
+            "weightCode":""
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"DELL FEDERAL SYSTEMS L.P.",
+                  "baseProductPrice":1139,
+                  "osSpecs":"Win 10 Pro 64 English, French, Spanish",
+                  "clinIdf":"CLIN_201607292236575538031_XXXX_32260974D8E546969E897E3280B4DA3B"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":10,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":1011,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L1",
+            "hardDriveCode":"512",
+            "imageUrl":"http://www.dell.com/us/business/p/latitude-e5470-laptop/pd",
+            "nameCode":"Dell Latitude E5470 TS",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"Laptop: [210-AFUC] Processor: [379-BCGD] ",
+            "osCode":"pc",
+            "processorCode":"i7",
+            "ramCode":"16",
+            "weightCode":"Starting weight: 3.68 lbs."
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"GOVERNMENT ACQUISITIONS, INC.",
+                  "baseProductPrice":1791,
+                  "osSpecs":"Windows 10 Pro 64bit English, French, Spanish with option to ship 8.1 or 7 for free.  OS with latest service pack(s)",
+                  "clinIdf":"CLIN_201607292236575550701_XXXX_682F3CC328884D7DA33CA8DF4377A613"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":11,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":1011,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L1",
+            "hardDriveCode":"256",
+            "imageUrl":"Dell Base Laptop Latitude 15-e5570.jpg",
+            "nameCode":"Dell Latitude E5570",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"210-AFUE  ;379-BCGT",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":"4.61 lbs."
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"PC SPECIALISTS, INC.",
+                  "baseProductPrice":1400,
+                  "osSpecs":"Windows 10 Pro 64bit English, French, Spanish",
+                  "clinIdf":"CLIN_201607292236575581449_XXXX_E6C32169266E45A998786AFF81580645"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":12,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":1011,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L2",
+            "hardDriveCode":"180",
+            "imageUrl":"Latitude 12 7000 Series.jpg",
+            "nameCode":"Dell Latitude E7250",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"[210-ACWG][379-BCBP]",
+            "osCode":"pc",
+            "processorCode":"i7",
+            "ramCode":"8",
+            "weightCode":"2.76lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":1568,
+                  "osSpecs":"Windows 8.1 Pro English, French, Spanish 64bit (Includes Windows 10 Pro License)",
+                  "clinIdf":"CLIN_201607292236575545091_XXXX_C8407BB9F7144CC6BAEE7B57BD73CEC7"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":13,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":1011,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L2",
+            "hardDriveCode":"180",
+            "imageUrl":"Dell Latitude 7270",
+            "nameCode":"Dell Latitude E7270",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"338-BHMR; 379-BCFX",
+            "osCode":"pc",
+            "processorCode":null,
+            "ramCode":"8",
+            "weightCode":"2.77lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"IRON BOW TECHNOLOGIES, LLC",
+                  "baseProductPrice":1411,
+                  "osSpecs":"Windows 10 Pro 64bit English, French, Spanish",
+                  "clinIdf":"CLIN_201607292236575511312_XXXX_2DB481A0748C4B2D8ABD147A99505A7A"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":14,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":1011,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L1",
+            "hardDriveCode":"256",
+            "imageUrl":"",
+            "nameCode":"Dell Latitude E7470",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"210-AFQE-C",
+            "osCode":"pc",
+            "processorCode":"i7",
+            "ramCode":"8,16",
+            "weightCode":"3.32lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FORCE 3, LLC",
+                  "baseProductPrice":1681,
+                  "osSpecs":"Windows 10 Pro 64 with option to ship 8.1 or 7 for free.  OS with latest service pack(s)",
+                  "clinIdf":"CLIN_201607292236575557238_XXXX_AB6620D494FC41BD89D2A110D7161C1B"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":15,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":1011,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L3",
+            "hardDriveCode":"500",
+            "imageUrl":"",
+            "nameCode":"Dell Mobile Precision Workstation 3510",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"210-AGME",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"16",
+            "weightCode":""
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"DELL FEDERAL SYSTEMS L.P.",
+                  "baseProductPrice":1223,
+                  "osSpecs":"Win 10 Pro 64 English, French, Spanish",
+                  "clinIdf":"CLIN_201607292236575555139_XXXX_0077C7A880844AC6AD97E04A1EDAA1CE"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":16,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":1011,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L3",
+            "hardDriveCode":"512",
+            "imageUrl":"Dell Mobile Precision 5510 - High-Level Laptop Picture",
+            "nameCode":"Dell Mobile Precision Workstation 5510",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"210-AGQK",
+            "osCode":"pc",
+            "processorCode":"i7",
+            "ramCode":"16,32",
+            "weightCode":"3.93 pounds"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"MA FEDERAL, INC.",
+                  "baseProductPrice":2618,
+                  "osSpecs":"Windows 10 Pro 64 English, French, Spanish with option to ship 8.1 or 7 for free.  OS with latest service pack(s)",
+                  "clinIdf":"CLIN_201607292236575566359_XXXX_D5BC52AB59E04EC7AC96DA7C1BD8B9D0"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":17,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":1011,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L3",
+            "hardDriveCode":"500",
+            "imageUrl":"",
+            "nameCode":"Dell Mobile Precision Workstation 7510",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"7510XG-C",
+            "osCode":"pc",
+            "processorCode":"i7",
+            "ramCode":"16,64",
+            "weightCode":"6.16lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FORCE 3, LLC",
+                  "baseProductPrice":1895,
+                  "osSpecs":"Windows 10 Pro 64 with option to ship 8.1 or 7 for free.  OS with latest service pack(s)",
+                  "clinIdf":"CLIN_201607292236575554135_XXXX_AD1D2436F77E483F84F7FB5DC2B57889"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":18,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":685,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D1",
+            "hardDriveCode":"500",
+            "imageUrl":"http://www.dell.com/us/business/p/optiplex-3040-desktop/pd",
+            "nameCode":"Dell OptiPlex 3040 SFF",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"Desktop:  [210-AFXK]                         Processor:  [338-BHUE];[412-AAGQ];;",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"GOVERNMENT ACQUISITIONS, INC.",
+                  "baseProductPrice":685,
+                  "osSpecs":"Windows 10 Pro 64bit English, French, Spanish with option to ship 8.1 or 7 for free.  OS with latest service pack(s)",
+                  "clinIdf":"CLIN_201607292236575574741_XXXX_3F41BC4B69924F1EADF5D08AF727D90E"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":19,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":685,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D1",
+            "hardDriveCode":"500",
+            "imageUrl":"",
+            "nameCode":"Dell OptiPlex 5040 MT",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"338-BHUG",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"DELL FEDERAL SYSTEMS L.P.",
+                  "baseProductPrice":752,
+                  "osSpecs":"Win 10 Pro 64 English, French, Spanish",
+                  "clinIdf":"CLIN_201607292236575514597_XXXX_2AABFBA2800F42A68A7C9F42EB4D017E"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":20,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":685,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D1",
+            "hardDriveCode":"500",
+            "imageUrl":"http://i.dell.com/sites/imagecontent/products/PublishingImages/optiplex-5040-desktop/0384_pdp-polaris-MT_SFF_Triggerfish_5000_module_02.jpg",
+            "nameCode":"Dell OptiPlex 5040 SFF",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"210-AFIF ,338-BHUH",
+            "osCode":"pc",
+            "processorCode":"i7",
+            "ramCode":"8",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"ANACAPA MICRO PRODUCTS, INC.",
+                  "baseProductPrice":865,
+                  "osSpecs":"Win 10 Pro 64 English, French, Spanish (619-AHKN) ",
+                  "clinIdf":"CLIN_201607292236575541384_XXXX_F8C9F937E41E488795CA041ECE63CE06"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":21,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":685,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D2",
+            "hardDriveCode":"500",
+            "imageUrl":"",
+            "nameCode":"Dell OptiPlex 7040",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"338-BHUG",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"16",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"DELL FEDERAL SYSTEMS L.P.",
+                  "baseProductPrice":841,
+                  "osSpecs":"[10P64M] Windows 10 Pro, 64bit English, French, Spanish",
+                  "clinIdf":"CLIN_201607292236575526359_XXXX_7A489CEBE3F14D73BD725C01C5D72357"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":22,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":685,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D1",
+            "hardDriveCode":"500",
+            "imageUrl":"Dell Desktop Optiplex 7040.jpg ",
+            "nameCode":"Dell OptiPlex 7040 MT",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"338-BHUG;412-AAGU;210-AFGI",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"PC SPECIALISTS, INC.",
+                  "baseProductPrice":856,
+                  "osSpecs":"Windows 10 Pro 64bit English, French, Spanish",
+                  "clinIdf":"CLIN_201607292236575583792_XXXX_AC1D3FB5C07246E69AE2431DC508DFBA"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":23,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":685,
+         "numOfOfferings":2,
+         "attributes":{  
+            "configurationTypeCode":"D1",
+            "hardDriveCode":"500",
+            "imageUrl":"",
+            "nameCode":"Dell OptiPlex 7040 SFF",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"210-AFGK-C",
+            "osCode":"pc",
+            "processorCode":"i7",
+            "ramCode":"8,32",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FORCE 3, LLC",
+                  "baseProductPrice":870,
+                  "osSpecs":"Windows 10 Pro 64 with option to ship 8.1 or 7 for free.  OS with latest service pack(s)",
+                  "clinIdf":"CLIN_201607292236575512690_XXXX_CC4B3EE951A046FAA3D6B9EF7BF06A2D"
+               },
+               {  
+                  "contractorName":"FORCE 3, LLC",
+                  "baseProductPrice":1350,
+                  "osSpecs":"Windows 10 Pro 64 with option to ship 8.1 or 7 for free.  OS with latest service pack(s)",
+                  "clinIdf":"CLIN_201607292236575574417_XXXX_B8540C81BC854193B224F42D2070C4A9"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":24,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":685,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D2",
+            "hardDriveCode":"500",
+            "imageUrl":"",
+            "nameCode":"Dell Precision T3420 SFF",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"210-AFLH-C",
+            "osCode":"pc",
+            "processorCode":"i7",
+            "ramCode":"16,64",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FORCE 3, LLC",
+                  "baseProductPrice":1155,
+                  "osSpecs":"Windows 10 Pro 64 with option to ship 8.1 or 7 for free.  OS with latest service pack(s)",
+                  "clinIdf":"CLIN_201607292236575549146_XXXX_84B44ABE74634AB7A99653BEEBAD8C3F"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":25,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":685,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D2",
+            "hardDriveCode":"500",
+            "imageUrl":"Dell Precsion 3620 Tower",
+            "nameCode":"Dell Precision T3620",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"210-AFLI & [338-BIBN];[631-AARR]",
+            "osCode":"pc",
+            "processorCode":"i7",
+            "ramCode":"16",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"IRON BOW TECHNOLOGIES, LLC",
+                  "baseProductPrice":1137,
+                  "osSpecs":"Windows 10 Pro 64 with option to ship 8.1 or 7 for free.  OS with latest service pack(s)",
+                  "clinIdf":"CLIN_201607292236575523290_XXXX_C33FAEA2ABC840A883149046D7815EB5"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":26,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":685,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D1",
+            "hardDriveCode":"500",
+            "imageUrl":"Dell Precision T3620 Mini Tower",
+            "nameCode":"Dell Precision T3620 MT",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"210-AFLI & 338-BIDT];[631-AARR",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"IRON BOW TECHNOLOGIES, LLC",
+                  "baseProductPrice":855,
+                  "osSpecs":"Windows 10 Pro 64bit English, French, Spanish",
+                  "clinIdf":"CLIN_201607292236575510624_XXXX_E05DE305B2F043A99FE81C1DAB1E1933"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":27,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":685,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"T1",
+            "hardDriveCode":"256",
+            "imageUrl":"",
+            "nameCode":"Dell Venue 11 Pro",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"210-ABGI",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":"1.6 lb"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"BLUE TECH INC.",
+                  "baseProductPrice":935,
+                  "osSpecs":";Windows 8.1 Pro, 64-bit English/French;option to ship 8.1 or 7 for free.",
+                  "clinIdf":"CLIN_201609142223493357203_XXXX_2359420D65DD4446A3D45362A4DF1840"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":28,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"T1",
+            "hardDriveCode":"32",
+            "imageUrl":"Dell Venueâ„¢ 8 Pro 5000 Series Tablet.jpg",
+            "nameCode":"Dell VenueTM 8 Pro 5000 Series",
+            "oemMfrName":"Dell",
+            "oemMfrCode":"[210-AFRT]",
+            "osCode":"pc",
+            "processorCode":null,
+            "ramCode":"2",
+            "weightCode":"0.83lbs (377.1g)"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":453,
+                  "osSpecs":"Windows 10 Pro 64bit English",
+                  "clinIdf":"CLIN_201609142223493326067_XXXX_9F6FBFB0338342669744266B533F384E"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":29,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"T1",
+            "hardDriveCode":"128",
+            "imageUrl":"Fujitsu Q736.jpg",
+            "nameCode":"Fujitus Stylistic Q736 w/ Intel i3 6100 ",
+            "oemMfrName":"Fujitus",
+            "oemMfrCode":"NSP-Q736-USAF-01",
+            "osCode":"pc",
+            "processorCode":"i3",
+            "ramCode":"4",
+            "weightCode":"2.15 lbs tablet   "
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"INTELLIGENT DECISIONS, INC.",
+                  "baseProductPrice":1073,
+                  "osSpecs":"Windows 10 Pro 64-bit  (supports 8.1 and 7)",
+                  "clinIdf":"CLIN_201609142223493343488_XXXX_30CD3A09130644A4856DD069B648CC4A"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":30,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":2,
+         "attributes":{  
+            "configurationTypeCode":"T2",
+            "hardDriveCode":"128",
+            "imageUrl":"GETAC F110 G2 Rugged.jpg",
+            "nameCode":"GETAC F110 G2 TAA i5-5200U",
+            "oemMfrName":"Getac",
+            "oemMfrCode":"FC61KCDA1DXA",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":"3.08 ibs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":2436,
+                  "osSpecs":"Win 10 Pro 64 bit",
+                  "clinIdf":"CLIN_201609142223493396728_XXXX_D61920B7EBEA4A3EB6B2CA7E2F6402A2"
+               },
+               {  
+                  "contractorName":"ANACAPA MICRO PRODUCTS, INC.",
+                  "baseProductPrice":1995,
+                  "osSpecs":"Win 10 Pro 64 bit",
+                  "clinIdf":"CLIN_201609142223493377231_XXXX_1FA452EF06E04951A2E3D786F602A2F8"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":31,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":2,
+         "attributes":{  
+            "configurationTypeCode":"T2",
+            "hardDriveCode":"500",
+            "imageUrl":"http://us.getac.com/notebooks/S410/features.html",
+            "nameCode":"GETAC S410 i5-6200U",
+            "oemMfrName":"Getac",
+            "oemMfrCode":"SE2NK5DAEDQX",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"4",
+            "weightCode":"4.9 lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FCN, INC.",
+                  "baseProductPrice":1983,
+                  "osSpecs":"Win 10 Pro 64 bit",
+                  "clinIdf":"CLIN_201609142223493309853_XXXX_F852FF97026C4E87B1D9113E421B319B"
+               },
+               {  
+                  "contractorName":"ANACAPA MICRO PRODUCTS, INC.",
+                  "baseProductPrice":1596,
+                  "osSpecs":"Win 10 Pro 64 bit",
+                  "clinIdf":"CLIN_201609142223493341744_XXXX_B2CAA490E04545098DBB685C444693F1"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":32,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":2,
+         "attributes":{  
+            "configurationTypeCode":"T2",
+            "hardDriveCode":"128",
+            "imageUrl":"",
+            "nameCode":"GETAC V110 G2 i5-5200U",
+            "oemMfrName":"Getac",
+            "oemMfrCode":"VC6B2CDABDXX",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":"4.36 lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"ANACAPA MICRO PRODUCTS, INC.",
+                  "baseProductPrice":2599,
+                  "osSpecs":"Win 10 Pro 64 bit ",
+                  "clinIdf":"CLIN_201609142223493309066_XXXX_0D268E41294845E19FA5007065C00F90"
+               },
+               {  
+                  "contractorName":"FCN, INC.",
+                  "baseProductPrice":2501,
+                  "osSpecs":"Win 10 Pro 64 bit ",
+                  "clinIdf":"CLIN_201609142223493396849_XXXX_8CCCBD467B9942C8B7968ED190E8BB03"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":33,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"T1",
+            "hardDriveCode":"128",
+            "imageUrl":"",
+            "nameCode":"HP Elite x2 1012 G1",
+            "oemMfrName":"HP",
+            "oemMfrCode":"N4E64AV",
+            "osCode":"pc",
+            "processorCode":null,
+            "ramCode":"8",
+            "weightCode":"Tablet only: Starting at 1.8 lbs;Tablet with Advanced Keyboard: 2.79 lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FCN, INC.",
+                  "baseProductPrice":1874,
+                  "osSpecs":"Windows 10 Pro 64-bit",
+                  "clinIdf":"CLIN_201609142223493309816_XXXX_EBAC06E25FC647969BC1D04D1F465D13"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":34,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":2,
+         "attributes":{  
+            "configurationTypeCode":"T1",
+            "hardDriveCode":"128",
+            "imageUrl":"HP elitex2 tablet.jpg",
+            "nameCode":"HP Elite x2 1012 G1 Hybrid",
+            "oemMfrName":"HP",
+            "oemMfrCode":"N4E54AV",
+            "osCode":"pc",
+            "processorCode":null,
+            "ramCode":"8",
+            "weightCode":"Starting at 1.8 lbs."
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":1708,
+                  "osSpecs":"Windows 10 Professional 64",
+                  "clinIdf":"CLIN_201609142223493353174_XXXX_9F4465F2B987498CAA8818F8D3FA4C71"
+               },
+               {  
+                  "contractorName":"ANACAPA MICRO PRODUCTS, INC.",
+                  "baseProductPrice":1839,
+                  "osSpecs":"Windows 10 Professional 64",
+                  "clinIdf":"CLIN_201609142223493304873_XXXX_09EEAFFA4DDF4F84A2242800BF6D7F7C"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":35,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"T2",
+            "hardDriveCode":"256",
+            "imageUrl":"EliteBook 1040.jpg",
+            "nameCode":"HP EliteBook 1040G3",
+            "oemMfrName":"HP",
+            "oemMfrCode":"M5R97AV",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8,16",
+            "weightCode":"Starting at 3.15 lbs."
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"HPI FEDERAL LLC",
+                  "baseProductPrice":1667,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade to Win 7 64 US",
+                  "clinIdf":"CLIN_201609142223493319188_XXXX_E9F52A672563487A9415790267841799"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":36,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"T2",
+            "hardDriveCode":"256",
+            "imageUrl":"EliteBook 1040.jpg",
+            "nameCode":"HP EliteBook 1040G3 (Touch)",
+            "oemMfrName":"HP",
+            "oemMfrCode":"M5R97AV",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8,16",
+            "weightCode":"Touch Screen Model starting at 3.40 lbs."
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"HPI FEDERAL LLC",
+                  "baseProductPrice":1811,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade to Win 7 64 US",
+                  "clinIdf":"CLIN_201609142223493308480_XXXX_3D57DF947C354E118DF718BECB42627B"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":37,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L2",
+            "hardDriveCode":"256",
+            "imageUrl":"",
+            "nameCode":"HP EliteBook 725 G3",
+            "oemMfrName":"HP",
+            "oemMfrCode":"L8K51AV",
+            "osCode":"pc",
+            "processorCode":null,
+            "ramCode":"8",
+            "weightCode":"Starting at 2.78 lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FCN, INC.",
+                  "baseProductPrice":1111,
+                  "osSpecs":"Windows 7 Professional 64-bit with Windows 10 Pro 64-bit License",
+                  "clinIdf":"CLIN_201607292236575568061_XXXX_F21F7C10D6BD43ECA34312DDA5675D1A"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":38,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"T1",
+            "hardDriveCode":"128",
+            "imageUrl":"",
+            "nameCode":"HP EliteBook 810 G3",
+            "oemMfrName":"HP",
+            "oemMfrCode":"L3N37AV",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":"Starting at 3.08 lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FCN, INC.",
+                  "baseProductPrice":1590,
+                  "osSpecs":"Windows 10 Pro 64-bit",
+                  "clinIdf":"CLIN_201609142223493360788_XXXX_63EA08F444E648E58BDB86FF3707D0DF"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":39,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L2",
+            "hardDriveCode":"500",
+            "imageUrl":"See Attached Product Spec Sheets contained in IMPRES Technology Solutions_CIO_CS-G_WSS_Technical_Proposal_Volume.pdf",
+            "nameCode":"HP EliteBook 820 G2",
+            "oemMfrName":"HP",
+            "oemMfrCode":"K7U48AV",
+            "osCode":"pc",
+            "processorCode":"i7",
+            "ramCode":"8",
+            "weightCode":"2.94lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"IMPRES TECHNOLOGY SOLUTIONS, INC.",
+                  "baseProductPrice":1278,
+                  "osSpecs":"*N4M48AV#ABA HP INC. : Win 10 Pro 64 w/DG Win7 64.",
+                  "clinIdf":"CLIN_201607292236575525953_XXXX_67CF461541304E43A31C90EC10D2750D"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":40,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":5,
+         "attributes":{  
+            "configurationTypeCode":"L2",
+            "hardDriveCode":"180",
+            "imageUrl":"See Attached Spec",
+            "nameCode":"HP EliteBook 820 G3",
+            "oemMfrName":"HP",
+            "oemMfrCode":"N5F47AV",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":"2.78lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"ANACAPA MICRO PRODUCTS, INC.",
+                  "baseProductPrice":1497,
+                  "osSpecs":"Windows 10 Pro 64 w/Downgrade Facilitation Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575538075_XXXX_3D3B0BC5037544D8B0E60B16943581A2"
+               },
+               {  
+                  "contractorName":"NEW TECH SOLUTIONS, INC.",
+                  "baseProductPrice":1394,
+                  "osSpecs":"",
+                  "clinIdf":"CLIN_201607292236575533305_XXXX_75B80233CA3E489C94980DD3889B3485"
+               },
+               {  
+                  "contractorName":"COUNTERTRADE PRODUCTS, INC.",
+                  "baseProductPrice":1408,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade Facilitation to Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575592117_XXXX_5D8599F7286245DB9D90457A05371E9A"
+               },
+               {  
+                  "contractorName":"EN-NET SERVICES, L.L.C.",
+                  "baseProductPrice":1310,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade Facilitation to Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575598317_XXXX_F48972D089374A8E8F4180C477790959"
+               },
+               {  
+                  "contractorName":"IRON BOW TECHNOLOGIES, LLC",
+                  "baseProductPrice":1351,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade Facilitation to Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575503651_XXXX_396FDF90E3044BA48748811DA6FCAC50"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":41,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L2",
+            "hardDriveCode":"180",
+            "imageUrl":"Elitebook 820G3.jpg",
+            "nameCode":"HP EliteBook 820 G3 TS",
+            "oemMfrName":"HP",
+            "oemMfrCode":"N5F47AV",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8,16",
+            "weightCode":"Starting at 3.08 lbs."
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"HPI FEDERAL LLC",
+                  "baseProductPrice":1365,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade Facilitation to Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575585137_XXXX_67F668E3F2124BC18896BC313B3ED03C"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":42,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L1",
+            "hardDriveCode":"256",
+            "imageUrl":"EliteBook 840G3.jpg",
+            "nameCode":"HP EliteBook 840 G3",
+            "oemMfrName":"HP",
+            "oemMfrCode":"L3C70AV",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8,16",
+            "weightCode":"Starting at 3.41 lbs."
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"HPI FEDERAL LLC",
+                  "baseProductPrice":1309,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade Facilitation to Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575514949_XXXX_EAC610FE7CAC40F3A1EE268721891A1D"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":43,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L1",
+            "hardDriveCode":"256",
+            "imageUrl":"EliteBook 840G3.jpg",
+            "nameCode":"HP EliteBook 840 G3 TS",
+            "oemMfrName":"HP",
+            "oemMfrCode":"L3C70AV",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8,16",
+            "weightCode":"Starting at 3.76 lbs. (Touch)"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"HPI FEDERAL LLC",
+                  "baseProductPrice":1370,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade Facilitation to Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575544321_XXXX_821ABED80DEA40149A998ABC4A4FB145"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":44,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L1",
+            "hardDriveCode":"256",
+            "imageUrl":"",
+            "nameCode":"HP EliteBook 850 G3",
+            "oemMfrName":"HP",
+            "oemMfrCode":"L5H52AV",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":"Starting at 4.15 lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FCN, INC.",
+                  "baseProductPrice":1284,
+                  "osSpecs":"Windows 7 Professional 64-bit with Windows 10 Pro 64-bit License",
+                  "clinIdf":"CLIN_201607292236575506737_XXXX_38A2C4AC261D48E5B0072C25AF3A005E"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":45,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L3",
+            "hardDriveCode":"256",
+            "imageUrl":"",
+            "nameCode":"HP EliteBook 850G3",
+            "oemMfrName":"",
+            "oemMfrCode":"L5H51AV",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8,16",
+            "weightCode":"Starting at 4.54 lbs."
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"EN-NET SERVICES, L.L.C.",
+                  "baseProductPrice":1409,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade Facilitation to Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575594932_XXXX_82E4CD4DDE894D84BCB5BD0ADB8111B6"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":46,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D1",
+            "hardDriveCode":"500",
+            "imageUrl":"",
+            "nameCode":"HP EliteDesk 705 G2",
+            "oemMfrName":"HP",
+            "oemMfrCode":"L1M89AV;;L1R42AV",
+            "osCode":"pc",
+            "processorCode":null,
+            "ramCode":"8,32",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FCN, INC.",
+                  "baseProductPrice":637,
+                  "osSpecs":"Windows 7 Professional 64 (available through downgrade rights from Windows 10 Pro)",
+                  "clinIdf":"CLIN_201607292236575526122_XXXX_F5A6018FB34A451885C0C4E620882451"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":47,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D1",
+            "hardDriveCode":"500",
+            "imageUrl":"",
+            "nameCode":"HP EliteDesk 800 G2",
+            "oemMfrName":"HP",
+            "oemMfrCode":"L2X86AV;;N8G50AV",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8,32",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FCN, INC.",
+                  "baseProductPrice":855,
+                  "osSpecs":"Windows 7 Professional 64 (available through downgrade rights from Windows 10 Pro)",
+                  "clinIdf":"CLIN_201607292236575592378_XXXX_4F60239A5D894451B3B85EC6CA9B650B"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":48,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D2",
+            "hardDriveCode":"500",
+            "imageUrl":"",
+            "nameCode":"HP EliteDesk 800 G2 Tower",
+            "oemMfrName":"HP",
+            "oemMfrCode":"L1G77AV",
+            "osCode":"pc",
+            "processorCode":"i7",
+            "ramCode":"16,64",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FCN, INC.",
+                  "baseProductPrice":1075,
+                  "osSpecs":"Windows 7 Professional 64 (available through downgrade rights from Windows 10 Pro)",
+                  "clinIdf":"CLIN_201607292236575509073_XXXX_AA708E3CB48442F59E88E8B3A0F9EB05"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":49,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D2",
+            "hardDriveCode":"500",
+            "imageUrl":"",
+            "nameCode":"HP EliteOne 800 G2",
+            "oemMfrName":"HP",
+            "oemMfrCode":"L3N93AV;;N8G73AV",
+            "osCode":"pc",
+            "processorCode":"i7",
+            "ramCode":"16,32",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FCN, INC.",
+                  "baseProductPrice":1516,
+                  "osSpecs":"Windows 7 Professional 64 (available through downgrade rights from Windows 10 Pro)",
+                  "clinIdf":"CLIN_201607292236575554361_XXXX_42B0C98C921B435B8FA99BEBA68BD56C"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":50,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"T1",
+            "hardDriveCode":"64",
+            "imageUrl":"",
+            "nameCode":"HP ElitePad 1000 G2",
+            "oemMfrName":"HP",
+            "oemMfrCode":"F9H50AV",
+            "osCode":"pc",
+            "processorCode":null,
+            "ramCode":"4",
+            "weightCode":"1.5 lbs."
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"BLUE TECH INC.",
+                  "baseProductPrice":2105,
+                  "osSpecs":"N2U14AV#ABA Win 10 Pro 64 TB2:1;Windows 10 Pro 64-bit for Small Tablets and 2 in 1;no downgrade rights",
+                  "clinIdf":"CLIN_201609142223493334548_XXXX_C8594691D24D4D1D8F07E1E99DC4809F"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":51,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"T2",
+            "hardDriveCode":"256",
+            "imageUrl":"HP Folio.jpg",
+            "nameCode":"HP Folio G1",
+            "oemMfrName":"HP",
+            "oemMfrCode":"P2C89AV",
+            "osCode":"pc",
+            "processorCode":null,
+            "ramCode":"8",
+            "weightCode":"Touch Screen Model starting at 2.41 lbs."
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"HPI FEDERAL LLC",
+                  "baseProductPrice":1778,
+                  "osSpecs":"Windows 10 Pro 64",
+                  "clinIdf":"CLIN_201609142223493301894_XXXX_7F7136E057FB4AEA992A06886A1C079C"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":52,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":3,
+         "attributes":{  
+            "configurationTypeCode":"T1",
+            "hardDriveCode":"128",
+            "imageUrl":"Pro x2 612.jpg",
+            "nameCode":"HP Pro x2 612 G1",
+            "oemMfrName":"HP",
+            "oemMfrCode":"J1V55AV",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"4",
+            "weightCode":"Tablet starting at 2.04 lbs.; Power Keyboard starting at 2.16 lbs."
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"HPI FEDERAL LLC",
+                  "baseProductPrice":1472,
+                  "osSpecs":"Windows 10 Professional 64-Bit",
+                  "clinIdf":"CLIN_201609142223493345054_XXXX_A890BDBBC69F4C7E8A8FAEE06B641067"
+               },
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":939,
+                  "osSpecs":"Windows 10 Professional 64-Bit",
+                  "clinIdf":"CLIN_201609142223493330672_XXXX_AFCFB01678A34F60B52F401F9FA77C56"
+               },
+               {  
+                  "contractorName":"EN-NET SERVICES, L.L.C.",
+                  "baseProductPrice":1309,
+                  "osSpecs":"Windows 10 Professional 64-Bit",
+                  "clinIdf":"CLIN_201609142223493371479_XXXX_A8E4B802C8DC4453A1ECC79E1870E3B1"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":53,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":13,
+         "attributes":{  
+            "configurationTypeCode":"L1",
+            "hardDriveCode":"256",
+            "imageUrl":"Probook 640G2.jpg",
+            "nameCode":"HP ProBook 640 G2",
+            "oemMfrName":"HP",
+            "oemMfrCode":"L8U39AV",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8,16",
+            "weightCode":"Starting at 4.30 lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"HPI FEDERAL LLC",
+                  "baseProductPrice":1187,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade Facilitation to Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575535014_XXXX_4B9C0DE1A5EE4C2AB6259D346F5D02DB"
+               },
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":1245,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade Facilitation to Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575513901_XXXX_28CEB107581B434DB363B1FB129758FF"
+               },
+               {  
+                  "contractorName":"AKIRA TECHNOLOGIES, INC.",
+                  "baseProductPrice":1218,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade Facilitation to Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575549337_XXXX_AEF8A7A9417D46A0AE2DA4DBA3D3EFEE"
+               },
+               {  
+                  "contractorName":"IDEAL SYSTEM SOLUTIONS, INC.",
+                  "baseProductPrice":1228,
+                  "osSpecs":"Windows 10 Pro 64 with option to ship 8.1 or 7 for free.  OS with latest service pack(s)",
+                  "clinIdf":"CLIN_201607292236575539082_XXXX_83C11E7C38EC44D5A2516845DA4DE627"
+               },
+               {  
+                  "contractorName":"WESTWIND COMPUTER PRODUCTS, INC.",
+                  "baseProductPrice":1159,
+                  "osSpecs":"Windows 10 Pro 64 w/Downgrade Facilitation Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575599043_XXXX_E05EAB957CDA474D91A27A3109450C7A"
+               },
+               {  
+                  "contractorName":"NEW TECH SOLUTIONS, INC.",
+                  "baseProductPrice":1213,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade Facilitation to Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575534023_XXXX_084A006FF0974CACA5608D3CD40EFDF4"
+               },
+               {  
+                  "contractorName":"COUNTERTRADE PRODUCTS, INC.",
+                  "baseProductPrice":1227,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade Facilitation to Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575558501_XXXX_9F33DACCE5CC424C88E9AE3E73861621"
+               },
+               {  
+                  "contractorName":"EN-NET SERVICES, L.L.C.",
+                  "baseProductPrice":1140,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade Facilitation to Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575509343_XXXX_86100D86242F4F81B227645BCB097E63"
+               },
+               {  
+                  "contractorName":"IRON BOW TECHNOLOGIES, LLC",
+                  "baseProductPrice":1201,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade Facilitation to Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575511728_XXXX_81E3923032F04BF1BA64BCCEE96F141F"
+               },
+               {  
+                  "contractorName":"ANACAPA MICRO PRODUCTS, INC.",
+                  "baseProductPrice":1302,
+                  "osSpecs":"Windows 10 Pro 64 w/Downgrade Facilitation Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575552366_XXXX_9521FF14C4E9492D91FA97B4AC7DB663"
+               },
+               {  
+                  "contractorName":"FCN, INC.",
+                  "baseProductPrice":1284,
+                  "osSpecs":"Windows 7 Professional 64-bit with Windows 10 Pro 64-bit License",
+                  "clinIdf":"CLIN_201607292236575556942_XXXX_022CBF263182437191F388639F8C72B7"
+               },
+               {  
+                  "contractorName":"GOVERNMENT ACQUISITIONS, INC.",
+                  "baseProductPrice":1117,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade Facilitation to Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575535733_XXXX_803FC71E02794114807AC3D52038624D"
+               },
+               {  
+                  "contractorName":"RED RIVER COMPUTER CO., INC.",
+                  "baseProductPrice":1337,
+                  "osSpecs":"Windows 10 Pro 64 w/Downgrade Facilitation Win 7 64 US, OS with latest service pack(s)",
+                  "clinIdf":"CLIN_201607292236575552281_XXXX_7D7B18860F304634977ED908F122D0BA"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":54,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L1",
+            "hardDriveCode":"256",
+            "imageUrl":"",
+            "nameCode":"HP ProBook 645 G2",
+            "oemMfrName":"HP",
+            "oemMfrCode":"L8X65AV",
+            "osCode":"pc",
+            "processorCode":null,
+            "ramCode":"8",
+            "weightCode":"Starting at 4.30 lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FCN, INC.",
+                  "baseProductPrice":1027,
+                  "osSpecs":"Windows 7 Professional 64-bit with Windows 10 Pro 64-bit License",
+                  "clinIdf":"CLIN_201607292236575571429_XXXX_3CBBAFA7C96543F59A51EB03F62F5A53"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":55,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L1",
+            "hardDriveCode":"256",
+            "imageUrl":"LT - Laptop Mand - HP ProBook 650 G2",
+            "nameCode":"HP ProBook 650 G2",
+            "oemMfrName":"HP",
+            "oemMfrCode":"W3U18AV",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8,16",
+            "weightCode":"Starting at 5.1 lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"EN-NET SERVICES, L.L.C.",
+                  "baseProductPrice":1289,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade Facilitation to Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575561993_XXXX_EE04CE4AD0FC40A28E6E66473D5743DC"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":56,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":19,
+         "attributes":{  
+            "configurationTypeCode":"D1",
+            "hardDriveCode":"500",
+            "imageUrl":"ProDesk 600G2 MT.jpg",
+            "nameCode":"HP ProDesk 600 G2 MT",
+            "oemMfrName":"HP",
+            "oemMfrCode":"L1Q38AV",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8,16",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"HPI FEDERAL LLC",
+                  "baseProductPrice":819,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575559903_XXXX_E689D1ABB5904D49A1BF25E181D67E5C"
+               },
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":831,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575513627_XXXX_7276B4EEB14B48B7B3578F162C3526B8"
+               },
+               {  
+                  "contractorName":"AKIRA TECHNOLOGIES, INC.",
+                  "baseProductPrice":839,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575577575_XXXX_6D8C75F1E599402EB278DCCB8D94DF6E"
+               },
+               {  
+                  "contractorName":"IDEAL SYSTEM SOLUTIONS, INC.",
+                  "baseProductPrice":845,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575545022_XXXX_BA8D6B8604424FC5B9A16F932D913879"
+               },
+               {  
+                  "contractorName":"IMPRES TECHNOLOGY SOLUTIONS, INC.",
+                  "baseProductPrice":827,
+                  "osSpecs":"N1J08AV#ABA Microsoft Windows 10 Pro Downgrade Win 7 Pro 64-bit OS US",
+                  "clinIdf":"CLIN_201607292236575506708_XXXX_4E0F05ABFAD44C8BAEF008ACA885A0ED"
+               },
+               {  
+                  "contractorName":"NEW TECH SOLUTIONS, INC.",
+                  "baseProductPrice":835,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade Win 7 Pro 64-bit OS US",
+                  "clinIdf":"CLIN_201607292236575570873_XXXX_EE19E85E9B1447DB995DD9593C7DEAAD"
+               },
+               {  
+                  "contractorName":"COUNTERTRADE PRODUCTS, INC.",
+                  "baseProductPrice":839,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575598244_XXXX_CAF8434160A5482FB76EB4565E2D5787"
+               },
+               {  
+                  "contractorName":"EN-NET SERVICES, L.L.C.",
+                  "baseProductPrice":786,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575561004_XXXX_8D65F91D7A85452B9962058F882282C7"
+               },
+               {  
+                  "contractorName":"IRON BOW TECHNOLOGIES, LLC",
+                  "baseProductPrice":811,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575544509_XXXX_A345ACAF76574B30ACA6D2E6684E9B0A"
+               },
+               {  
+                  "contractorName":"HPI FEDERAL LLC",
+                  "baseProductPrice":1030,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575524302_XXXX_90FCD6D36C7E443B8727CA8133E6F584"
+               },
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":1045,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575551640_XXXX_C5BEAD358FAC4A09A53923EC9BCD7474"
+               },
+               {  
+                  "contractorName":"AKIRA TECHNOLOGIES, INC.",
+                  "baseProductPrice":1054,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575522380_XXXX_C1232100EAB14C19B2A4329C34BDAEC4"
+               },
+               {  
+                  "contractorName":"IDEAL SYSTEM SOLUTIONS, INC.",
+                  "baseProductPrice":1062,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575564712_XXXX_475E68EA9E9C416A922FC97760D471E1"
+               },
+               {  
+                  "contractorName":"IMPRES TECHNOLOGY SOLUTIONS, INC.",
+                  "baseProductPrice":1029,
+                  "osSpecs":"N1J08AV#ABA Microsoft Windows 10 Pro Downgrade Win 7 Pro 64-bit OS US",
+                  "clinIdf":"CLIN_201607292236575507901_XXXX_6DA733F4955C48E18029741A25B5BE30"
+               },
+               {  
+                  "contractorName":"WESTWIND COMPUTER PRODUCTS, INC.",
+                  "baseProductPrice":1064,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade Win 7 Pro 64-bit OS US",
+                  "clinIdf":"CLIN_201607292236575522147_XXXX_B1DDD949E063419E9DEE37DBBEC1F229"
+               },
+               {  
+                  "contractorName":"NEW TECH SOLUTIONS, INC.",
+                  "baseProductPrice":1050,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade Win 7 Pro 64-bit OS US",
+                  "clinIdf":"CLIN_201607292236575528346_XXXX_7C94089F9AD74E848D3ED869A8824F90"
+               },
+               {  
+                  "contractorName":"COUNTERTRADE PRODUCTS, INC.",
+                  "baseProductPrice":1039,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575523560_XXXX_E43F1DDC059C427F8FB90BC941D7BEAA"
+               },
+               {  
+                  "contractorName":"EN-NET SERVICES, L.L.C.",
+                  "baseProductPrice":978,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575507956_XXXX_4FCAA09271E94AB9AB0CFC7622F8EF33"
+               },
+               {  
+                  "contractorName":"IRON BOW TECHNOLOGIES, LLC",
+                  "baseProductPrice":1020,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575588538_XXXX_572954FBD4EC4974B61F956A0B7885B0"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":57,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":10,
+         "attributes":{  
+            "configurationTypeCode":"D1",
+            "hardDriveCode":"500",
+            "imageUrl":"HP ProDesk 600 Small Form Factor PC",
+            "nameCode":"HP ProDesk 600 G2 SFF",
+            "oemMfrName":"HP",
+            "oemMfrCode":"L1Q39AV",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"WESTWIND COMPUTER PRODUCTS, INC.",
+                  "baseProductPrice":830,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade Win 7 Pro 64-bit OS US",
+                  "clinIdf":"CLIN_201607292236575501142_XXXX_C61CAAFB03534C4F96EFEAFE534706AF"
+               },
+               {  
+                  "contractorName":"HPI FEDERAL LLC",
+                  "baseProductPrice":804,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575596967_XXXX_D1CF1714A9E34E06B11B7DF3AB8E2470"
+               },
+               {  
+                  "contractorName":"AKIRA TECHNOLOGIES, INC.",
+                  "baseProductPrice":823,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575516386_XXXX_B7457600925F42A7BC9ACE50E696A5B2"
+               },
+               {  
+                  "contractorName":"NEW TECH SOLUTIONS, INC.",
+                  "baseProductPrice":820,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade Win 7 Pro 64-bit OS US",
+                  "clinIdf":"CLIN_201607292236575580379_XXXX_A098623CE1E9456B932C479F68CC49B7"
+               },
+               {  
+                  "contractorName":"COUNTERTRADE PRODUCTS, INC.",
+                  "baseProductPrice":823,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575560654_XXXX_563A6E10CA38402BA87FED80CFA6040B"
+               },
+               {  
+                  "contractorName":"IRON BOW TECHNOLOGIES, LLC",
+                  "baseProductPrice":796,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575556581_XXXX_65D629E78FF749BFB7DF4BD7180E7772"
+               },
+               {  
+                  "contractorName":"AKIRA TECHNOLOGIES, INC.",
+                  "baseProductPrice":1038,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575586843_XXXX_9F4987E7C8554B40B82AB999ECF1661A"
+               },
+               {  
+                  "contractorName":"NEW TECH SOLUTIONS, INC.",
+                  "baseProductPrice":1025,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade Win 7 Pro 64-bit OS US",
+                  "clinIdf":"CLIN_201607292236575552111_XXXX_CDF1C999E12D42649ED311CA0B90C920"
+               },
+               {  
+                  "contractorName":"EN-NET SERVICES, L.L.C.",
+                  "baseProductPrice":973,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575593235_XXXX_2570134124A04299BA658FEE0063286C"
+               },
+               {  
+                  "contractorName":"IRON BOW TECHNOLOGIES, LLC",
+                  "baseProductPrice":933,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575516023_XXXX_6CC845026AAE4B4FA8CB104DBE408D8B"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":58,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L3",
+            "hardDriveCode":"512",
+            "imageUrl":"See Attached Spec Sheet",
+            "nameCode":"HP RCTO G3",
+            "oemMfrName":"HP",
+            "oemMfrCode":"M9R66AV",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"16",
+            "weightCode":"5.7lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"ANACAPA MICRO PRODUCTS, INC.",
+                  "baseProductPrice":1980,
+                  "osSpecs":"Windows 10 Pro 64 w/Downgrade Facilitation Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575520069_XXXX_F0BCBFB0DDE6419788DF4A878515A485"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":59,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L2",
+            "hardDriveCode":"180",
+            "imageUrl":"",
+            "nameCode":"HP RCTO UMA",
+            "oemMfrName":"HP",
+            "oemMfrCode":"N5F47AV",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8,16",
+            "weightCode":"Starting at 2.78 lbs."
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"AKIRA TECHNOLOGIES, INC.",
+                  "baseProductPrice":1399,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade Facilitation to Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575504193_XXXX_3158403BC00147F499870D6B9D1077F1"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":60,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D2",
+            "hardDriveCode":"500",
+            "imageUrl":"",
+            "nameCode":"HP Z1 G2 All-in-One",
+            "oemMfrName":"HP",
+            "oemMfrCode":"D8G62AV;;G6F17AV",
+            "osCode":"pc",
+            "processorCode":null,
+            "ramCode":"16",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FCN, INC.",
+                  "baseProductPrice":2428,
+                  "osSpecs":"Win 10 Pro 64 Downgrade Win 7 64",
+                  "clinIdf":"CLIN_201607292236575577207_XXXX_82040C3106724DA2BD821BFAAADC35A5"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":61,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":7,
+         "attributes":{  
+            "configurationTypeCode":"D2",
+            "hardDriveCode":"256",
+            "imageUrl":"See file with part number",
+            "nameCode":"HP Z240 SFF",
+            "oemMfrName":"HP",
+            "oemMfrCode":"L8T14AV",
+            "osCode":"pc",
+            "processorCode":null,
+            "ramCode":"32,16",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"ANACAPA MICRO PRODUCTS, INC.",
+                  "baseProductPrice":1260,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575590470_XXXX_4B9354EAD83D4FD18DBE17FF2170DD61"
+               },
+               {  
+                  "contractorName":"HPI FEDERAL LLC",
+                  "baseProductPrice":1628,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575599403_XXXX_CFB9EAF62CE14E9DA847FEC06705F9E8"
+               },
+               {  
+                  "contractorName":"AKIRA TECHNOLOGIES, INC.",
+                  "baseProductPrice":1667,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575545006_XXXX_A63569D9EEB849F985AF3DDAB153114E"
+               },
+               {  
+                  "contractorName":"NEW TECH SOLUTIONS, INC.",
+                  "baseProductPrice":1661,
+                  "osSpecs":"Win 10 Pro 64 Downgrade Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575506248_XXXX_0766BC9F637048E597BEEFB1B5493299"
+               },
+               {  
+                  "contractorName":"COUNTERTRADE PRODUCTS, INC.",
+                  "baseProductPrice":1667,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575525881_XXXX_CF9C276B1414479C92A6A2673D8FEB6A"
+               },
+               {  
+                  "contractorName":"EN-NET SERVICES, L.L.C.",
+                  "baseProductPrice":1562,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575574632_XXXX_49A7B16E10514664B0845AC7C85D4F71"
+               },
+               {  
+                  "contractorName":"IRON BOW TECHNOLOGIES, LLC",
+                  "baseProductPrice":1612,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575549886_XXXX_3D4B6B7B9B2A459987B3ABFB873FB45C"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":62,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":10,
+         "attributes":{  
+            "configurationTypeCode":"D3",
+            "hardDriveCode":"256",
+            "imageUrl":"Z240 Tower.jpg",
+            "nameCode":"HP Z240 Tower",
+            "oemMfrName":"HP",
+            "oemMfrCode":"L8T12AV",
+            "osCode":"pc",
+            "processorCode":null,
+            "ramCode":"32,16",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"HPI FEDERAL LLC",
+                  "baseProductPrice":1659,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575549303_XXXX_E2DE2528AC3244C6AD39F90A9F41FC03"
+               },
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":1684,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575590635_XXXX_F1E1A1974D224B9C812BD70EFDB72E97"
+               },
+               {  
+                  "contractorName":"AKIRA TECHNOLOGIES, INC.",
+                  "baseProductPrice":1698,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575515667_XXXX_50A53A7031B64E82A6C9AABBC1CC74AD"
+               },
+               {  
+                  "contractorName":"IDEAL SYSTEM SOLUTIONS, INC.",
+                  "baseProductPrice":1710,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575542476_XXXX_209B377C940D48BF9B8A1FDF0F075093"
+               },
+               {  
+                  "contractorName":"IMPRES TECHNOLOGY SOLUTIONS, INC.",
+                  "baseProductPrice":1665,
+                  "osSpecs":"M6Q30AV#ABA Win 10 Pro 64 Downgrade Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575557670_XXXX_87FF8365F92341DB94E1628D50067784"
+               },
+               {  
+                  "contractorName":"WESTWIND COMPUTER PRODUCTS, INC.",
+                  "baseProductPrice":1714,
+                  "osSpecs":"Win 10 Pro 64 Downgrade Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575589762_XXXX_BF459BD505C747418387AAFB0AC1F2C9"
+               },
+               {  
+                  "contractorName":"NEW TECH SOLUTIONS, INC.",
+                  "baseProductPrice":1692,
+                  "osSpecs":"Win 10 Pro 64 Downgrade Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575520367_XXXX_C2A921DBB51D40B4A8DC6B4B931688A8"
+               },
+               {  
+                  "contractorName":"COUNTERTRADE PRODUCTS, INC.",
+                  "baseProductPrice":1699,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575554349_XXXX_AE6509EE71BF477EB466910368FD83C7"
+               },
+               {  
+                  "contractorName":"EN-NET SERVICES, L.L.C.",
+                  "baseProductPrice":1592,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575549155_XXXX_489E99BCD4964163BB61F7429EE2B001"
+               },
+               {  
+                  "contractorName":"IRON BOW TECHNOLOGIES, LLC",
+                  "baseProductPrice":1643,
+                  "osSpecs":"Microsoft Windows 10 Pro Downgrade to Windows 7 Pro 64-bit Operating System US",
+                  "clinIdf":"CLIN_201607292236575592483_XXXX_4AA748D381914787BE925A8EC0B8094E"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":63,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D3",
+            "hardDriveCode":"256",
+            "imageUrl":"",
+            "nameCode":"HP Z440",
+            "oemMfrName":"HP",
+            "oemMfrCode":"F5W13AV;;J6S66AV",
+            "osCode":"pc",
+            "processorCode":null,
+            "ramCode":"32,28",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FCN, INC.",
+                  "baseProductPrice":2739,
+                  "osSpecs":"Win 10 Pro 64 Downgrade Win 7 64",
+                  "clinIdf":"CLIN_201607292236575540723_XXXX_F395AE8B307E426480B2187DA41E4977"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":64,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D3",
+            "hardDriveCode":"256",
+            "imageUrl":"",
+            "nameCode":"HP Z840",
+            "oemMfrName":"HP",
+            "oemMfrCode":"F5G73AV;;J6F75AV;J6F94AV",
+            "osCode":"pc",
+            "processorCode":null,
+            "ramCode":"32,32",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FCN, INC.",
+                  "baseProductPrice":4214,
+                  "osSpecs":"Win 10 Pro 64 Downgrade Win 7 64",
+                  "clinIdf":"CLIN_201607292236575563694_XXXX_FC357652688540CF984B2227D4A66874"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":65,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L2",
+            "hardDriveCode":"180",
+            "imageUrl":"GSS Lightweight Laptop Mandatory Base Elitebook 820G3.jpg",
+            "nameCode":"HP Zbook 15 G3",
+            "oemMfrName":"HP",
+            "oemMfrCode":"L4Q23AV",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8,16",
+            "weightCode":"Starting at 2.78 lbs."
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"IDEAL SYSTEM SOLUTIONS, INC.",
+                  "baseProductPrice":1333,
+                  "osSpecs":"Windows 10 Pro 64 w/ Downgrade Facilitation to Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575505874_XXXX_3FA71F5AB971498192619118526B2C58"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":66,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L3",
+            "hardDriveCode":"500",
+            "imageUrl":"See Attached Product Spec Sheets contained in IMPRES Technology Solutions_CIO_CS-G_WSS_Technical_Proposal_Volume.pdf",
+            "nameCode":"HP Zbook 15U G3",
+            "oemMfrName":"HP",
+            "oemMfrCode":"M6G50AV",
+            "osCode":"pc",
+            "processorCode":"i7",
+            "ramCode":"16",
+            "weightCode":"4.18lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"IMPRES TECHNOLOGY SOLUTIONS, INC.",
+                  "baseProductPrice":1731,
+                  "osSpecs":"N3T95AV#ABA Windows 10 Pro 64 w/Downgrade Facilitation Win 7 64 US",
+                  "clinIdf":"CLIN_201607292236575512797_XXXX_7935AE29EA2A407DB015428696297E5B"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":67,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L3",
+            "hardDriveCode":"512",
+            "imageUrl":"",
+            "nameCode":"HP Zbook 17 G3",
+            "oemMfrName":"HP",
+            "oemMfrCode":"M9L92AV",
+            "osCode":"pc",
+            "processorCode":"i7",
+            "ramCode":"64,16",
+            "weightCode":"Starting at 6.62 lb"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FCN, INC.",
+                  "baseProductPrice":2798,
+                  "osSpecs":"Windows 10 Pro 64 with Downgrade Facilitation Windows 7 64 US",
+                  "clinIdf":"CLIN_201607292236575558996_XXXX_46A01002AAC248E094A7EADED350B1AD"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":68,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D4",
+            "hardDriveCode":"256",
+            "imageUrl":"Apple Imac 2.8GHz.jpg",
+            "nameCode":"iMac 2.8GHz Quad Core i5 Intel",
+            "oemMfrName":"Apple",
+            "oemMfrCode":"Z0RR-2101962395",
+            "osCode":"mac",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":1476,
+                  "osSpecs":"OS X El Capitan (OS 10.11.x)",
+                  "clinIdf":"CLIN_201609142223493315923_XXXX_6E6FEF7397814318A21C72ADEC53A442"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":69,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D4",
+            "hardDriveCode":"256",
+            "imageUrl":"Apple Imac 27 - 3.2GHz.jpg",
+            "nameCode":"iMac 3.2GHz Quad Core i5 Intel",
+            "oemMfrName":"Apple",
+            "oemMfrCode":"Z0SD-2101964268",
+            "osCode":"mac",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":2067,
+                  "osSpecs":"OS X El Capitan (OS 10.11.x)",
+                  "clinIdf":"CLIN_201609142223493382818_XXXX_637DB7516CA544F3929ED8780D9C5647"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":70,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D1",
+            "hardDriveCode":"500",
+            "imageUrl":"GSS_ThinkCentre M900 SFF 1_03172016",
+            "nameCode":"Lenovo ThinkCentre M900 SFF",
+            "oemMfrName":"Lenovo",
+            "oemMfrCode":"10FGS1JB00",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8,16",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"INSIGHT PUBLIC SECTOR, INC.",
+                  "baseProductPrice":714,
+                  "osSpecs":"Windows 10 Pro 64.  Lenovo provides drivers for Win 10, Win 8.1 and Win 7. ",
+                  "clinIdf":"CLIN_201607292236575512011_XXXX_270D592F0FC04C759907AFEF4236E69E"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":71,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L3",
+            "hardDriveCode":"500",
+            "imageUrl":"GSS_ThinkPad P50 1_03172016;GSS_ThinkPad P50 2_03172016;",
+            "nameCode":"Lenovo ThinkPad P50",
+            "oemMfrName":"Lenovo",
+            "oemMfrCode":"20EQS25400",
+            "osCode":"pc",
+            "processorCode":"i7",
+            "ramCode":"16,64",
+            "weightCode":"5.6 lbs (4-cell)"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"INSIGHT PUBLIC SECTOR, INC.",
+                  "baseProductPrice":1568,
+                  "osSpecs":"Windows 10 Pro 64.  Lenovo provides drivers for Win 10, Win 8.1 and Win 7. ",
+                  "clinIdf":"CLIN_201607292236575515170_XXXX_9B1D826B644E45E39B9DA01704C6A2B6"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":72,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L1",
+            "hardDriveCode":"256",
+            "imageUrl":"GSS_ThinkPad T460 1_03172016;GSS_ThinkPad T460 2_03172016",
+            "nameCode":"Lenovo ThinkPad T460",
+            "oemMfrName":"Lenovo",
+            "oemMfrCode":"20FMS2YB00",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8,32",
+            "weightCode":"3.82 lbs (3-cell + 3-cell)"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"INSIGHT PUBLIC SECTOR, INC.",
+                  "baseProductPrice":1067,
+                  "osSpecs":"Windows 10 Pro 64.  Lenovo provides drivers for Win 10, Win 8.1 and Win 7. ",
+                  "clinIdf":"CLIN_201607292236575534479_XXXX_68DCB0E29F9145BDB8F24CCC8746C365"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":73,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":5,
+         "attributes":{  
+            "configurationTypeCode":"L2",
+            "hardDriveCode":"180",
+            "imageUrl":"GSS_ThinkPad X260 1_03172016",
+            "nameCode":"Lenovo ThinkPad X260",
+            "oemMfrName":"Lenovo",
+            "oemMfrCode":"20F5CTO1WW",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8,16",
+            "weightCode":"3.18 lbs (3-cell + 3-cell)"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":1184,
+                  "osSpecs":"Windows 10 Pro 64.  Lenovo provides drivers for Win 10, Win 8.1 and Win 7. ",
+                  "clinIdf":"CLIN_201607292236575583285_XXXX_0EEABD5FCE65449C83A5439558F86DDC"
+               },
+               {  
+                  "contractorName":"PCPC DIRECT, LTD.",
+                  "baseProductPrice":964,
+                  "osSpecs":"Windows 10 Pro 64.  Lenovo provides drivers for Win 10, Win 8.1 and Win 7. ",
+                  "clinIdf":"CLIN_201607292236575596310_XXXX_06ED9BA6EDF24E1AAD508249B77C06F6"
+               },
+               {  
+                  "contractorName":"ADVANCED COMPUTER CONCEPTS, INC.",
+                  "baseProductPrice":927,
+                  "osSpecs":"Windows 10 Pro 64.  Lenovo provides drivers for Win 10, Win 8.1 and Win 7. ",
+                  "clinIdf":"CLIN_201607292236575599263_XXXX_D1AE193B608C474A982E09456AA41809"
+               },
+               {  
+                  "contractorName":"PCPC DIRECT, LTD.",
+                  "baseProductPrice":978,
+                  "osSpecs":"Windows 10 Pro 64.  Lenovo provides drivers for Win 10, Win 8.1 and Win 7. ",
+                  "clinIdf":"CLIN_201607292236575597202_XXXX_D8F15CB832264B6CBFF711DE5C3FB7E2"
+               },
+               {  
+                  "contractorName":"RED RIVER COMPUTER CO., INC.",
+                  "baseProductPrice":1069,
+                  "osSpecs":"Windows 10 Pro 64 with option to ship 8.1 or 7 for free.  Lenovo provides drivers for Win 10, Win 8.1 and Win 7. OS with latest service pack(s).",
+                  "clinIdf":"CLIN_201607292236575533915_XXXX_7112845257EE42E68FFC063FF80F1F64"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":74,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D3",
+            "hardDriveCode":"256",
+            "imageUrl":"GSS_ThinkStation P310 SFF 1_03172016;GSS_ThinkStation P310 SFF 2_03172016",
+            "nameCode":"Lenovo ThinkStation P310 SFF",
+            "oemMfrName":"Lenovo",
+            "oemMfrCode":"30AUCTO1WW",
+            "osCode":"pc",
+            "processorCode":null,
+            "ramCode":"16,64",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"PCPC DIRECT, LTD.",
+                  "baseProductPrice":1038,
+                  "osSpecs":"Windows 10 Pro 64.  Lenovo provides drivers for Win 10, Win 8.1 and Win 7. ",
+                  "clinIdf":"CLIN_201607292236575576768_XXXX_AB1CD48CDAE54C509A155DD0EE5D1BAD"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":75,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D3",
+            "hardDriveCode":"256",
+            "imageUrl":"GSS_ThinkStation P310 Twr 1_03172016",
+            "nameCode":"Lenovo ThinkStation P310 Tower",
+            "oemMfrName":"Lenovo",
+            "oemMfrCode":"30ASS10600",
+            "osCode":"pc",
+            "processorCode":null,
+            "ramCode":"16,16",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"INSIGHT PUBLIC SECTOR, INC.",
+                  "baseProductPrice":1107,
+                  "osSpecs":"Windows 10 Pro 64.  Lenovo provides drivers for Win 10, Win 8.1 and Win 7. ",
+                  "clinIdf":"CLIN_201607292236575597165_XXXX_D64785ADD803478C8D4795B7A8975C7E"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":76,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"D4",
+            "hardDriveCode":"256",
+            "imageUrl":"Apple Mac Mini.jpg",
+            "nameCode":"Mac Mini Desktop 2.8GHz Dual-Core",
+            "oemMfrName":"Apple",
+            "oemMfrCode":"Z0R8-2102137715 ",
+            "osCode":"mac",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":985,
+                  "osSpecs":"OS X El Capitan (OS 10.11.x)",
+                  "clinIdf":"CLIN_201609142223493320885_XXXX_71D2B465740A4B48BE04E7FB0BDBAA54"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":77,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":5,
+         "attributes":{  
+            "configurationTypeCode":"D4",
+            "hardDriveCode":"256",
+            "imageUrl":"Apple Mac Pro.jpg",
+            "nameCode":"Mac Pro Xeon 3.7GHz Quad Core E5",
+            "oemMfrName":"Apple",
+            "oemMfrCode":"ME253LL/A",
+            "osCode":"mac",
+            "processorCode":null,
+            "ramCode":"12",
+            "weightCode":null
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":2898,
+                  "osSpecs":"OS X El Capitan (OS 10.11.x)",
+                  "clinIdf":"CLIN_201609142223493379977_XXXX_6B1E28C9B2814B3EBE3821469F2D9C54"
+               },
+               {  
+                  "contractorName":"INTELLIGENT DECISIONS, INC.",
+                  "baseProductPrice":2777,
+                  "osSpecs":"OS X El Capitan (OS 10.11.x)",
+                  "clinIdf":"CLIN_201609142223493331103_XXXX_B9008485E7604AAABA024E83BEB08F1E"
+               },
+               {  
+                  "contractorName":"ANACAPA MICRO PRODUCTS, INC.",
+                  "baseProductPrice":2856,
+                  "osSpecs":"OS X El Capitan (OS 10.11.x)",
+                  "clinIdf":"CLIN_201609142223493386844_XXXX_8320D269F3674C18BFC26F863B0B80FE"
+               },
+               {  
+                  "contractorName":"BLUE TECH INC.",
+                  "baseProductPrice":3032,
+                  "osSpecs":"OS X El Capitan (OS 10.11.x)",
+                  "clinIdf":"CLIN_201609142223493398458_XXXX_4EDC1CE325274759B0F0D43E80B00125"
+               },
+               {  
+                  "contractorName":"RED RIVER COMPUTER CO., INC.",
+                  "baseProductPrice":3340,
+                  "osSpecs":"Apple OS X 10.11 El Capitan",
+                  "clinIdf":"CLIN_201609142223493328561_XXXX_5A53505FABFA49069EDEF13DD90DFC83"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":78,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L4",
+            "hardDriveCode":"256",
+            "imageUrl":"Apple MacBook Pro Retina Display - 13.3.jpg",
+            "nameCode":"MacBook Pro 13.3 w/ Retina",
+            "oemMfrName":"Apple",
+            "oemMfrCode":" MF840LL",
+            "osCode":"mac",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":"3.48 lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":1469,
+                  "osSpecs":"OS X El Capitan (OS 10.11.x)",
+                  "clinIdf":"CLIN_201609142223493377604_XXXX_D2DD09581008454193D2657DF1887ABA"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":79,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"L4",
+            "hardDriveCode":"256",
+            "imageUrl":"Apple MacBook Pro Retina display - 15.4.jpg",
+            "nameCode":"MacBook Pro 15.4 w/ Retina",
+            "oemMfrName":"Apple",
+            "oemMfrCode":"MJLQ2LL",
+            "osCode":"mac",
+            "processorCode":"i7",
+            "ramCode":"16",
+            "weightCode":"4.49Ibs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"CDW GOVERNMENT LLC",
+                  "baseProductPrice":1919,
+                  "osSpecs":"OS X El Capitan (OS 10.11.x)",
+                  "clinIdf":"CLIN_201609142223493351359_XXXX_4C461425807E41B7BE830202E8EB5B39"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":80,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"T2",
+            "hardDriveCode":"256",
+            "imageUrl":"Panasonic CF-53 Ruggedized Laptop",
+            "nameCode":"Panasonic Toughbook CF-53",
+            "oemMfrName":"Panasonic",
+            "oemMfrCode":"CF-533JUBZCM",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"4",
+            "weightCode":" 5.6 lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"FORCE 3, LLC",
+                  "baseProductPrice":1743,
+                  "osSpecs":"Win7 (Win8.1 Pro COA)",
+                  "clinIdf":"CLIN_201609142223493300861_XXXX_092F0A8D584742B6AD1D2EB7B3470DA0"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":81,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"T2",
+            "hardDriveCode":"500",
+            "imageUrl":"tb54.jpg",
+            "nameCode":"Panasonic Toughbook CF-54",
+            "oemMfrName":"Panasonic",
+            "oemMfrCode":"ID-GSS CF-54A0094CM",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"4",
+            "weightCode":"4.4 lbs."
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"INTELLIGENT DECISIONS, INC.",
+                  "baseProductPrice":1914,
+                  "osSpecs":"MS Win7 (Win8.1 Pro COA)",
+                  "clinIdf":"CLIN_201609142223493344638_XXXX_2E326C49EB064C4FB995D78A5FE36AF0"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":82,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"T2",
+            "hardDriveCode":"128",
+            "imageUrl":"fzm1.jpg",
+            "nameCode":"Panasonic ToughPad FZ-M1",
+            "oemMfrName":"Panasonic",
+            "oemMfrCode":"ID-GSS FZ-M1CEHEXBM",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":"1.2 lbs."
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"INTELLIGENT DECISIONS, INC.",
+                  "baseProductPrice":3029,
+                  "osSpecs":"Windows? 8.1 Pro 64-bit",
+                  "clinIdf":"CLIN_201609142223493356566_XXXX_6736A71A8AD2445F9EEA8C002D3835F3"
+               }
+            ]
+         }
+      },
+      {  
+         "productId":83,
+         "type":"VW_GSS_SOLUTION_PRODUCT",
+         "minBaseProductPrice":453,
+         "numOfOfferings":1,
+         "attributes":{  
+            "configurationTypeCode":"T2",
+            "hardDriveCode":"128",
+            "imageUrl":"",
+            "nameCode":"Panasonic ToughPad FZ-Q1",
+            "oemMfrName":"Panasonic",
+            "oemMfrCode":"",
+            "osCode":"pc",
+            "processorCode":"i5",
+            "ramCode":"8",
+            "weightCode":"2.3 lbs"
+         },
+         "relationships":{  
+            "contractors":[  
+               {  
+                  "contractorName":"INTELLIGENT DECISIONS, INC.",
+                  "baseProductPrice":2115,
+                  "osSpecs":"Win8.1 Pro",
+                  "clinIdf":"CLIN_201609142223493340031_XXXX_B1DEB9502BB04FECBCABA4DD2C7FAD81"
+               }
+            ]
+         }
+      }
+   ]
+}

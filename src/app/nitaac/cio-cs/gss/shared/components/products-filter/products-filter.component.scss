@@ -1,0 +1,193 @@
+.category {
+        //border: 1px solid #848383;
+        padding: 11px;
+        cursor: pointer;
+        padding-left: 75px;
+        //border-right: 1px solid #848383;
+        .text{
+            color: #064578;
+            font-size: 16px;
+            font-family: Roboto;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+         .fa{
+            font-size: 31px;
+            position: relative;
+            top: 5px;
+            left: 18px;
+            color: #434750;
+    }    
+}
+
+.selected-category {
+    margin: -55px 0 0 200px;
+}
+.filter-tags {
+    .type {
+        float: left;
+        margin-top: 11px;
+        white-space: nowrap;
+        display: inline-flex;
+        .title {
+            float: left;
+            padding-top: 8px;
+            font-size: 15px;
+            color: #212121;
+        }
+    
+    .tag {
+        padding: 4px 8px 8px 8px;
+        white-space: nowrap;
+        float: left;
+        height: 35px;
+        background-color: #F7F7F7;
+        border-radius: 15px;
+        color: #434750;
+        font-size: 16px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: 5px;
+        margin-right: 5px; 
+        font-family: Roboto;
+        font-weight: 500;
+        .close-tag {
+            cursor: pointer;
+            background: #fff;
+            border-radius: 100%;
+            color: #434750;
+            opacity: 1;
+                        top: 4px;
+            left:6px;
+            position: relative;
+            border: 2px solid #434750;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            .fa-times{
+                position: relative;
+                top: -4px;
+                font-size: 12px;
+                left: 3px;
+            }
+        }    
+    }
+    }
+}
+
+.show-category {
+    &.category {
+        width: 32%;
+    }
+    .clear {
+        color: #428533;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: Roboto;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0
+    }
+    position: absolute;
+    background-color: #FFF;
+    z-index: 2;
+    border: 1px solid #ccc;
+    border-top: none; 
+    .main-label{
+        color: #064578;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: Roboto;
+    }
+    ul.brands{
+        margin: 0;
+        padding: 0;
+        li{
+            input[type='checkbox']{
+
+            }
+        font-weight: normal;
+        font-size: 16px;
+        color: #212121;
+        font-family: Roboto;
+        }
+    }
+    .price-filter {
+       font-weight: normal;
+       font-size: 14px;
+       color: #4c4c4c;
+       display: inline-block;
+       width: auto;
+    }
+}
+.filter-drp{    
+    .checkbox label:after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .checkbox label{
+        padding-left: 0;
+        min-height: 0;
+        line-height: 18px;
+    }
+
+    .checkbox .cr{
+        position: relative;
+        display: inline-block;
+        border: 2px solid #434750;
+        border-radius: .15em;
+        width: 1em;
+        height: 1em;
+        float: left;
+        margin-right: .5em;
+    }
+    .checkbox .cr .cr-icon{
+        position: absolute;
+        font-size: .8em;
+        top: 50%;
+        left: 20%;
+    }
+
+    .checkbox label input[type="checkbox"]{
+        display: none;
+    }
+
+    .checkbox label input[type="checkbox"] + .cr > .cr-icon {
+        transform: scale(3) rotateZ(-20deg);
+        opacity: 0;
+        transition: all .3s ease-in;
+    }
+
+    .checkbox label input[type="checkbox"]:checked + .cr > .cr-icon{
+        transform: scale(1) rotateZ(0deg);
+        opacity: 1;
+        position: relative;
+        top: -4px;
+        left: -2px;
+        background: #428533;
+        color: #fff;
+        border: 2px solid #428533;
+        font-size: 12px;
+    }
+
+    .checkbox label input[type="checkbox"]:disabled + .cr{
+        opacity: .5;
+    }
+}
+.mobile-none{
+	display: block;
+}
+@media (max-width:640px){
+    .mobile-none{
+		display: none;
+	}
+	.desktop-none{
+		display: block;
+	}
+}

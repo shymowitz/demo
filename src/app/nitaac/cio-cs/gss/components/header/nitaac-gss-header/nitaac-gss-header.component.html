@@ -1,0 +1,43 @@
+<div class="header col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mobile-none">
+  <div id="logo" class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+    <img src="../assets/images/NITAAC-Logo-Reimagine-LightBG_white_bg.png">
+  </div>
+  <!--Right side menu bar starts-->
+  <div id="right-menu" class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+    <ul>
+      <ul *ngIf="userEmail()" class="dropdown-menu">
+          </ul>
+          <li class="menu-items">
+            <div class="btn-group">
+               <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <a href="#">ACCOUNT<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+               </span>
+               <ul *ngIf="account.email" class="dropdown-menu">
+                   <li><a>{{account.email}}</a></li>
+                   <li><a role="button" (click)="logout()">Logout</a></li>
+               </ul>
+            </div>
+          </li>
+          <li class="help"><a href="#">?</a></li>
+        </ul>
+      </div>
+      <!--End-->
+</div> 
+
+<!--For mobile response starts-->
+<div class="header desktop-none">
+  <div class="col-md-12 col-xs-12 col-sm-12">
+    <div class="col-md-2 col-xs-2 search"><i class="fa fa-search" aria-hidden="true"></i></div>
+    <div class="col-md-8 text-center col-xs-8 logo"><img src="../assets/images/NITAAC-Logo-Reimagine-LightBG_white_bg.png" class="img-responsive" width="220"></div>
+    <div class="col-md-2 col-xs-2 menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+  </div>
+</div>
+<!--End-->
+<div id="main-menu" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+  <nav md-tab-nav-bar>
+    <a md-tab-link [routerLink]="['/']" routerLinkActive #products="routerLinkActive" [class.active]="products.isActive">GSS ORDERS</a>
+    <a md-tab-link [routerLink]="['/']" routerLinkActive #order="routerLinkActive" [class.active]="order.isActive || isOrderActive">PRODUCTS</a>
+    <a md-tab-link [routerLink]="['/']" routerLinkActive #checkout="routerLinkActive" [class.active]="checkout.isActive">PENDING APPROVAL</a>
+  </nav>
+</div>
+

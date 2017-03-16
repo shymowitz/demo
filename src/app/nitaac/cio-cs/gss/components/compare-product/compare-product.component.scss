@@ -1,0 +1,165 @@
+.modal {
+   width: 98%;
+   z-index: 9999;
+   margin : auto;
+   margin-top: 1%;
+}
+.alert-msg {
+   position: fixed;
+   z-index: +999;
+   bottom: 5%;
+   right: 5%;
+}
+.compare-count {
+font-family: Roboto;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+margin-left: 27%;
+}
+.view-compare {
+   //position: fixed;
+   bottom: 10px;
+   right: 10px;
+   z-index: 99;
+   background-color: #0a4477;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.modal-header {
+        border-bottom: 1px solid #fff;
+    .compare-header{
+        color: #0A5694;
+        font-family: Merriweather;
+        margin-bottom: 47px;
+        margin-left: 137px;
+        font-size: 20px;
+    }
+    .close{
+        width: 17.7px;
+        height: 17.52px;
+        font-size: 36px;
+        padding-right: -14px;
+        margin-right: 36px;
+        font-weight: 200;
+        opacity: 1;
+        span {
+            position: relative;
+            top:-3px;
+        }
+    }
+}
+.container {
+  .table-spec{
+      color: #0A5694;
+      font-family: Merriweather;
+      margin-bottom: 47px;
+      font-size: 20px;
+   }
+   .trash{
+      i{
+         float: right;
+         margin-top: -43px;
+         font-size: 45px;
+         color: #0A5694;
+         cursor: pointer;
+      }
+   }
+   md-card{
+       .product-image {
+           height: 175px;
+       }
+      md-card-content {
+          .ch-name {
+            font-size: 14px;
+            color: #434750;
+            font-family: Merriweather;
+         }
+         .price {
+            margin-bottom: 10px;
+            color: #434750;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 300;
+         }
+         md-card-title {
+            margin-bottom: 1px;
+            font-size: 16px;
+            color: #434750;
+            font-family: Merriweather;
+         }
+      }
+      .delete-compare {
+            font-size: 16px;
+            color: #428533;
+            cursor: pointer;
+            font-family: Roboto;
+            font-weight: 500;
+      }
+   }
+}
+table {
+    width: 100%;
+    .cell-border {
+        border-bottom: 1px solid #b0bec5;
+        border-right: 1px solid #b0bec5;
+        padding: 10px;
+        border-left: 0px;
+        width: 20%;
+        font-family: Roboto;
+        font-size: 16px;
+        color: #000000;
+        &.labels {
+            border-right: 0px;
+            font-weight: bold;
+        }
+        &:last-child {
+            border-right: 0px;
+        }
+        &.product {
+            float: left;
+        }
+        md-card {
+            width:300px;
+            height: 343px;
+            .product-categories {
+                height: 30px;
+                margin-left: -24px;
+                margin-right: -24px;
+                margin-top: -24px;
+                background-color: #1191C1;
+                box-shadow: 0 1px 2px 0 rgba(204,204,204,0.9);
+                .category-name {
+                    padding-left: 20px;
+                    font-family: Roboto;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #FFFFFF;
+                }
+                .delete-compare {
+                    float: right;
+                    color: #fff;
+                    padding-right: 14px;
+                }
+            }
+        }
+    }
+    td:last-child {
+            border-right: 0px;
+        }
+    &.prod-img {
+        .cell-border {
+            border-bottom: 0px;
+        }
+    }
+}
+
+.addons {
+   color: #0A5694;
+   font-size: 25px;
+   font-family: -webkit-body;
+   padding-left: 30px;
+}

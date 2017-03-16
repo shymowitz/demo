@@ -1,0 +1,202 @@
+.orders {
+    img {
+      //width: 75%;
+      width: 401.8px;
+      height: 300px;
+    }
+    .product-content {
+        .product-desc {
+            font-size: 17px;
+            color: #434750;
+             .spec {
+                color: #4399C4;
+            }
+        }
+        .quan-price {
+            .quantity {
+                float: left;
+                width: 30px;
+                font-size: 16px;
+                position: relative;
+                left: -20px;
+                .fa{
+                    color:#56824f;
+                    font-size: 32px;
+                    position: relative;
+                }
+                .count{
+                    position: relative;
+                    top: -12px;
+                    font-size: 19px;
+                }
+                .fa-angle-up{
+                    left: -4px;
+                    top: -4px;
+                    cursor: pointer;
+                }
+                .fa-angle-down{
+                    left: -4px;
+                    bottom: 22px;
+                    cursor: pointer;
+                }
+            }
+            .price {
+                float: left;
+                margin-top: 20px;
+                font-size: 18px;
+            }
+        }
+        .product-name {
+            font-size: 24px;
+            color: #0A5694;
+            margin-top: 20px;
+            font-family: -webkit-body;
+            margin-bottom: 34px;
+        }
+        .view-add {
+            font-weight: bold;
+            color: #337ab7;
+            font-size: 16px;
+            .pull-right {
+                a {
+                    font-size: 25px;
+                }
+            }
+        } 
+    }
+    .addons {
+            .product {
+                margin-top: 20px;
+                height: 250px;
+            .desc {
+                margin-bottom: 40px;
+            }
+            .price {
+                position: absolute;
+                bottom: 5px;
+            }
+            .quantity {
+                position: absolute;
+                bottom: 5px;
+                right: 5px;
+                text-align: right;
+                .fa {
+                    margin-right: 6px;
+                }
+                .count {
+                    border: 1px solid #000;
+                    padding: 0px 3px;
+                    margin: 0px 3px;
+                }
+            }
+        }
+    }
+}
+    .total {
+        // background:#0A5694;;
+        // padding: 20px;
+        // color: #fff;
+        height: 100px;
+        background-color: #428533;
+        box-shadow: 0 -2px 4px 0 rgba(67,71,80,0.5);
+        .add-button {
+            text-align: right;
+        }
+    }
+.order{
+    .card{
+      margin: 20px auto;
+      box-shadow: 0 3px 1px 0 #777;
+    }
+}
+.container-fluid {
+    margin-top: 25px;
+    .total-amount{
+        font-size: 18px;
+        color:#fff;
+        cursor:pointer;
+        padding-right: 30px;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .save-later {
+        font-size: 17px;
+        color:#fff;
+        cursor:pointer;
+        padding-right: 30px;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .btn-default {
+        margin-right: 109px;
+        width: auto;
+        // width: 120px;
+        height: 50px;
+        background-color: #0A5694;
+        box-shadow: 0 3px 1px 0 #064578;
+        border-radius: 2px;
+        color: #F7F7F7;
+        border-color: #0A5694;
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+.trash{
+        i{
+            float: right;
+            margin-top: -18px;
+            font-size: 44px;
+            color: #9E9E9E;
+            cursor: pointer;
+        }
+    }
+@media (max-width:520px){
+    .order{
+        .card, .pl-none, .pr-none, .product-desc{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .quantity{
+            display: none;
+        }
+
+    }
+    .add-button{
+        button{
+            margin-bottom: 10px;
+            display: block;
+        }
+    }
+}
+.order-info {
+    margin-top: 30px;
+    line-height: 2.3;
+    .download-info {
+       /* padding-left: 55%; */
+       color: #0A5694;
+       font-weight: bold;
+       font-size: 17px;
+    }
+    .rfq {
+       margin: 0 0 0 40px;
+       color: #0A5694;
+       font-weight: bold;
+       font-size: 17px;
+       cursor: pointer;
+    }
+    .btn-default {
+       width: 140px;
+       height: 40px;
+       background-color: #428533;
+       box-shadow: 0 3px 1px 0 #2E5B24;
+       border-radius: 2px;
+       border-color: #0A5694;
+       color: #F7F7F7;
+    }       
+}
+.order-id {
+    clear: both;
+    font-size: 20px;
+}

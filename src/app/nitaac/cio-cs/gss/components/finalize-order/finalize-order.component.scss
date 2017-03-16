@@ -1,0 +1,429 @@
+.finalize-msg {
+    margin-bottom: 32px;
+    color: #434750;
+    font-size: 20px;
+    margin-left: -36px;
+}
+.product-title{
+    padding-left: 105px;
+}
+.order-msg {
+    margin-top: 40px;
+    color: #434750;
+    margin-bottom: 15px;
+}
+.final-order{
+    .checkout {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 1340px;
+        margin-left: -110px;
+        box-shadow: 0 3px 1px 0 #777;
+        height: 265px;
+    }
+    .img {
+        border: 1px solid #000;
+        height: 150px;
+    }
+    .checkout-details {
+        background-color: #1191C1;
+        height: 40px;
+        margin-top: -24px;
+        //margin-top: -24px;
+        //padding-bottom: 25px;
+        .order-num {
+            font-size: 17px;
+            color: #FFFFFF;
+            font-weight: 500;
+            font-family: Roboto;
+            padding-left: 30px;
+            padding-top: 7px;
+        }
+        .view-products {
+                color: #434750;
+                font-family: Merriweather;
+                font-size: 20px;
+                padding-top: 30px;
+                padding-left: 60px;
+            a {
+                font-weight: bold;
+                font-size: 17px;
+                cursor:pointer;
+                padding-left: 122px;
+                 &:hover{
+                    text-decoration: none;
+                }
+             } 
+        }
+        .ch-name {
+            padding-left: 60px;
+            font-family: Merriweather;
+            font-size: 20px;
+            color: #434750;
+        }
+    }
+    .information {
+        color: #434750;
+        font-size: 16px;
+        margin-top: 43px;
+        padding-left: 60px;
+        font-family: Roboto;
+        font-weight: bold;
+    }
+    .price {
+        float: right;
+        padding-right: 34px;
+        font-family: Roboto;
+        font-size: 20px;
+    color: #434750;
+    }
+    .contractor-details {
+        padding-left: 77px;
+        .contractor-name {
+            font-size: 16px;
+            color: #434750;
+            font-family: Roboto;
+            //margin-bottom: 7px;
+        }
+        .contractor-email {
+            color: #434750;
+        }
+        .contractor-phone {
+            color: #434750;
+        }
+    }
+    .order-info {
+        margin-top: 28px;
+        font-family: Roboto;
+        font-size: 17px;
+        font-weight: bold;
+        .view-prod{
+            margin-left: 45%;
+            margin-right: 50px;
+            color: #0A5694;
+            cursor: pointer;
+        }
+        .download-info {
+            //padding-left: 55%;
+            color: #0A5694;
+            cursor: pointer;
+        }
+        .rfq {
+            padding-left: 40px;
+            padding-right: 40px;
+            color: #0A5694;
+            cursor: pointer;
+        }
+        .btn-default {
+            width: 166px;
+            height: 40px;
+            background-color: #428533;
+            box-shadow: 0 3px 1px 0 #2E5B24;
+            border-radius: 2px;
+            border-color: #0A5694;
+            color: #F7F7F7;
+        }
+    }
+    .rfq-request {
+        color: #434750;
+        font-family: Merriweather;
+        font-size: 20px;
+        padding-left: 60px;
+        .ord {
+            padding-left: 33%;
+        }
+    }
+    .msg {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #434750;
+        padding-left: 60px;
+        padding-top: 10px;
+    }
+    .email {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 1340px;
+        margin-left: -110px;
+        height: 351px;
+        .top-header {
+            background-color: #1191C1;
+            height: 40px;
+            margin-top: -24px;
+        }
+        .email-title {
+            font-size: 20px;
+            line-height: 25px;
+            color: #434750;
+            font-family: Merriweather;
+            padding-left: 110px;
+            margin-top: 25px;
+        }
+        md-input {
+            margin-top: 25px;
+            padding-left: 110px;
+        }
+        .btn {
+            margin-top: 25px;
+            background-color: #428533;
+            box-shadow: 0 3px 1px 0 #2E5B24;
+            border-radius: 2px;
+            height: 50px;
+            width: 80px;
+            font-size: 16px;
+            font-family: Roboto;
+            font-weight: bold;
+            line-height: 19px;
+            color: #FFFFFF;
+        }
+    }
+}
+#detailsModal {
+    .modal-dialog {
+        width: 1380px;
+        h3 {
+            font-family: Merriweather;
+            font-size: 25px;
+            line-height: 32px;
+            color: #0A5694;
+        }
+        md-card {
+            height: 300px;
+               .product-categories {
+                margin-left: -15px;
+                margin-right: -15px;
+                margin-top: -24px;
+                background-color: #1191C1;
+                box-shadow: 0 1px 2px 0 rgba(204,204,204,0.9);
+                height: 40px;
+                .category-name {
+                    padding-left: 20px;
+                    font-family: Roboto;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #FFFFFF;
+                    line-height: 38px;
+                }
+            }
+            img {
+                width: 317.27px;
+                height: 259px;
+                margin-top: 0px;
+            }
+            .quan-price {
+            .quantity {
+                float: left;
+                width: 30px;
+                font-size: 16px;
+                position: relative;
+                left: -20px;
+                .fa{
+                    color:#56824f;
+                    font-size: 32px;
+                    position: relative;
+                }
+                .count{
+                    position: relative;
+                    top: -12px;
+                    font-size: 19px;
+                }
+                .fa-angle-up{
+                    left: -4px;
+                    top: -4px;
+                }
+                .fa-angle-down{
+                    left: -4px;
+                    bottom: 22px;
+                }
+            }
+            .price {
+                float: left;
+                margin-top: 20px;
+                font-size: 20px;
+                font-family: Roboto;
+                color: #434750;
+            }
+        }
+        .product-desc {
+            font-size: 17px;
+            font-family: Roboto;
+            font-weight: 500;
+            color: #434750;
+             .spec {
+                color: #4399C4;
+            }
+        }
+            .product-name {
+                font-size: 20px;
+                color: #434750;
+                margin-top: 20px;
+                font-family: Merriweather;
+                margin-bottom: 34px;
+            }
+            .view-add {
+                font-weight: bold;
+                color: #337ab7;
+                font-size: 16px;
+                    .addons {
+                        float: right;
+                        margin-right: 39px;
+                        cursor: pointer;
+                    a {
+                        font-size: 25px;
+                    }
+                }
+            } 
+        }
+        .addons {
+            .product {
+                margin-top: 20px;
+                width: 260px;
+                height: 260px;
+                .addon-title {
+                    font-family: Merriweather;
+                    font-size: 20px;
+                    color: #0A5694;
+                }
+                .desc {
+                    margin-bottom: 40px;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    color: #434750;
+                    }
+                    .price {
+                        position: absolute;
+                        bottom: 5px;
+                        font-family: Roboto;
+                        font-size: 20px;
+                        color: #434750;
+                    }
+                    .quantity {
+                        position: absolute;
+                        bottom: 5px;
+                        right: 5px;
+                        text-align: right;
+                        .fa {
+                            margin-right: 6px;
+                        }
+                        .count {
+                            border: 1px solid #000;
+                            padding: 0px 3px;
+                            margin: 0px 3px;
+                        }
+                    }
+                }
+        }
+        .product-img {
+            width: 401px;
+        }
+    }
+}
+#rfqModal {
+    .modal-content {
+        width: 460px;
+        height: 270px;
+        margin-left: 60px;
+        .modal-header {
+            border-bottom: 1px solid #fff;
+            .confirm {
+                font-size: 25px;
+                color: #0A5694;
+                font-family: -webkit-body;
+                padding-left: 30px;
+                padding-top: 23px;
+            }
+        }
+        .msg {
+            font-size: 17px;
+            color: #434750;
+            padding-left: 30px;
+            font-family: Roboto;
+            padding-right: 18px;
+        }
+        .modal-footer {
+            border-top: 1px solid #fff;
+            .rfq {
+                font-weight: bold;
+                color: #0A5694;
+                font-size: 17px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+#pocModal {
+    .modal-content {
+        //width: 850px;
+    }
+}
+#pocModal {
+    .modal-container {
+        width: 100%;
+    }
+    h3 {
+        color:#0A5694;
+        font-family: -webkit-body;
+    }
+    .order-type {
+        margin-bottom: 25px;
+    .po-order {
+        padding-left: 126px;
+    }
+}
+    #searchedUsers {
+        position: absolute;
+        z-index: 9999;
+        background: #ddd;
+        ul {
+            list-style: none;
+            padding-left: 0px;
+            padding: 5px;
+        }
+    }
+    
+}
+.date {
+    font-size: 17px;
+    input {
+        margin-left: 15px;
+    }
+}
+#pdf {
+    display: none;
+    h2 {
+        text-align: center;
+        background: gray;
+    }
+}
+.close{
+    width: 30px;
+    height: 30px;
+    background: #317daf;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 25px;
+    opacity: 1;
+    span{
+        position: relative;
+        top:-3px;
+    }
+}
+.trash{
+        i{
+            float: right;
+            margin-top: -50px;
+            font-size: 25px;
+            color: #F0F2F3;
+            cursor: pointer;
+            margin-right: -18px;
+        }
+    }
+.modalContent {
+    width: 850px;
+    margin-left: -140px;
+}
+.submit-btn {
+    margin-top: 40px;
+}

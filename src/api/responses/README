@@ -1,0 +1,27 @@
+  
+"productCount"
+     SELECT count(*) from `NEOSDEV`.`VW_GSS_SOLUTION_PRODUCT` where ACTIVE_FLAG= 'ACTIVE' and  (NITAAC_PARENT_CLIN is null OR NITAAC_PARENT_CLIN = '')
+
+     NOTE: This query returns only Windows products. 
+                All Mac products have NITAAC_PARENT_CLIN non-empty values
+                
+"minBaseProductPrice"
+   1. Get oem_part_num for the base product, e.g.
+       oem_part_num = "338-BHUG"
+
+   2. Get the minimum discounted_uni_price:
+      SELECT min(`vw_GSS_SOLUTION_PRODUCT`.discounted_unit_price) FROM `vw_GSS_SOLUTION_PRODUCT` WHERE `vw_GSS_SOLUTION_PRODUCT`.`OEM_PART_NUM` = '338-BHUG' AND (OEM_MFR_NAME != '' )
+
+"numOfOfferings" - The number of Contract Holders for the base product
+  SELECT count(*) FROM `vw_GSS_SOLUTION_PRODUCT` WHERE `vw_GSS_SOLUTION_PRODUCT`.`OEM_PART_NUM` = '338-BHUG' AND (OEM_MFR_NAME != '' )
+
+         
+
+
+"imageUrl" - PICTURE_FILENAME in VW_GSS_SOLUTION_PRODUCT
+"nameCode" - ITEM_NAME  in VW_GSS_SOLUTION_PRODUCT     
+
+Under "contractors" all attributes are from VW_GSS_SOLUTION_PRODUCT
+  "clinIdf" - NITAACT_CLIN for that product
+  "baseProductPrice" - DISCOUNTED_UNIT_PRICE for that product
+ 

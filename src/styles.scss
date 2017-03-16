@@ -1,0 +1,146 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/core/theming/all-theme';
+// NOTE: Theming is currently experimental and not yet publically released!
+@include md-core();
+$primary: md-palette($md-deep-purple);
+$accent: md-palette($md-blue-grey, A200, A100, A400);
+$theme: md-light-theme($primary, $accent);
+@include angular-material-theme($theme);
+
+/*.m2app-dark {
+  $dark-primary: md-palette($md-pink, 700, 500, 900);
+  $dark-accent:  md-palette($md-blue-grey, A200, A100, A400);
+  $dark-warn:    md-palette($md-deep-orange);
+
+  $dark-theme: md-dark-theme($dark-primary, $dark-accent, $dark-warn);
+
+  @include angular-material-theme($dark-theme);
+}*/
+
+// custom themes
+md-checkbox {
+    margin-right: 10px;
+    label {
+        span {
+            font-weight: 100 !important;
+        }
+    }
+}
+
+md-ink-bar {
+    background-color: #eabf02!important;
+    height: 5px!important;
+}
+
+.md-tab-label {
+    opacity: 1 !important;
+}
+
+.md-tab-label.md-tab-active {
+    border-bottom: 0px;
+}
+
+.md-tab-header {
+    background: #1191C1;
+    height: 55px;
+    
+}
+
+md-card.product {
+    &:hover {
+        box-shadow: 0 0 20px #000;
+        cursor: pointer;
+    }
+}
+
+md-card {
+    margin-bottom: 10px;
+}
+
+.addonlist {
+    margin-bottom: 110px;
+    md-card-title {
+        font-size: 18px;
+        word-break: break-word;
+    }
+}
+
+.dropdown-menu.brands {
+    left: auto !important;
+    top: auto !important;
+    padding: 5px !important;
+}
+
+.popover.left.in {
+    background: #000;
+    color: #fff;
+}
+.popover.left>.arrow:after {
+    border-left-color: #000;
+}
+
+[md-raised-button].md-primary,
+[md-fab].md-primary,
+[md-mini-fab].md-primary {
+    background-color: #4695d6;
+    float: right;
+}
+
+.breadcrum {
+    font-size: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 52px;
+    font-family: 'Merriweather';
+    background-color: #0a4477;
+    height: 60px;
+    margin-bottom: 40px;
+    a .material-icons {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 32px;
+        padding-left: 28px;
+        vertical-align: -7px;
+    }
+    .product-title {
+        padding-left: 35px;
+        font-size: 25px;
+        font-family: Merriweather;
+    }
+}
+
+.tag {
+    background: #14b114;
+    color: #fff;
+    padding: 3px;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+body {
+    background: #f7f7f7;
+}
+
+@media (max-width:520px) {
+    .breadcrum {
+        a {
+            .fa {
+                padding-left: 0!important;
+                position: relative;
+                top: -2px;
+            }
+        }
+        .product-title {
+            font-size: 21px;
+            padding-left: 5px;
+        }
+    }
+}
+
+// .grow { transition: all .2s ease-in-out; }
+// .grow:hover { transform: scale(1.1); }
